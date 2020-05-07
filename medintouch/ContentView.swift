@@ -9,11 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+  
+        @State private var compteur = 0
+        
+        var body: some View {
+            Text("\(compteur)")
+                .font(.system(size:90))
+                .fontWeight(.bold)
+                .onTapGesture {
+                    self.compteur += 1
     }
 }
-
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
