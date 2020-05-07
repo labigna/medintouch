@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MapView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, World! its my map")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MapView()
     }
 }
