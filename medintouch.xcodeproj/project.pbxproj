@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D347A9F2464374F00EC688F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347A9E2464374F00EC688F /* SwiftUIView.swift */; };
+		3D347AA12464376A00EC688F /* poulpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347AA02464376A00EC688F /* poulpy.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
 		71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0E246424F7003D84CE /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D347A9E2464374F00EC688F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		3D347AA02464376A00EC688F /* poulpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poulpy.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B2BA0C246424F7003D84CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
 				71B2BA12246424F8003D84CE /* Preview Content */,
+				3D347A9E2464374F00EC688F /* SwiftUIView.swift */,
+				3D347AA02464376A00EC688F /* poulpy.swift */,
 			);
 			path = medintouch;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
+				3D347AA12464376A00EC688F /* poulpy.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
+				3D347A9F2464374F00EC688F /* SwiftUIView.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
