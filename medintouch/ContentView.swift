@@ -8,16 +8,21 @@
 
 import SwiftUI
 
-struct MapView: View {
-    var body: some View {
-        VStack{
-        Text("Hello, World!")
-        }
+struct ContentView: View {
+  
+        @State private var compteur = 0
+        
+        var body: some View {
+            Text("\(compteur)")
+                .font(.system(size:90))
+                .fontWeight(.bold)
+                .onTapGesture {
+                    self.compteur += 1
     }
 }
-
-struct MapView_Previews: PreviewProvider {
+}
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        ContentView()
     }
 }
