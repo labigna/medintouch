@@ -10,8 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Test")
+        VStack{
+        Text("Suggestions")
+            Image("cerf")
+            
     }
+        
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
