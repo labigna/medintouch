@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715D3A0E2469496D002BEE91 /* ProfilM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A0D2469496D002BEE91 /* ProfilM.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
 		71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0E246424F7003D84CE /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		715D3A0D2469496D002BEE91 /* ProfilM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilM.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B2BA0C246424F7003D84CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715D3A0A246948A2002BEE91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				715D3A0D2469496D002BEE91 /* ProfilM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		715D3A0B246948D6002BEE91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71B2BA0E246424F7003D84CE /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		715D3A0C246948E0002BEE91 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		71B2B9FE246424F7003D84CE = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +83,9 @@
 			children = (
 				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
 				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
-				71B2BA0E246424F7003D84CE /* ContentView.swift */,
+				715D3A0B246948D6002BEE91 /* View */,
+				715D3A0C246948E0002BEE91 /* ViewModel */,
+				715D3A0A246948A2002BEE91 /* Model */,
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
@@ -147,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
+				715D3A0E2469496D002BEE91 /* ProfilM.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
 			);

@@ -10,8 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack{
-        Text("modif test")
+        ZStack{
+            VStack{
+                HStack{
+                    VStack{
+                        Image("pexels-photo-614810").resizable()
+                    
+                        
+                    }
+                }
+            }
         }
     }
 }
