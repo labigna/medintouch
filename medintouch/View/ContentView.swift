@@ -15,7 +15,7 @@ struct ContentView: View {
                 HStack{
                     VStack{
                         Image("pexels-photo-614810").resizable()
-                    
+                
                         
                     }
                 }
