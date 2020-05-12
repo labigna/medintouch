@@ -13,7 +13,6 @@ struct GraphView: View {
         HStack{
             CapsuleView(value: 80, couleur: .blue)
             CapsuleView(value: 50, couleur: .yellow)
-            
             CapsuleView(value: 20, couleur: .green)
             CapsuleView(value: 90, couleur: .red)
         }

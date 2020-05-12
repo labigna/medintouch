@@ -14,10 +14,10 @@ struct ProfilView: View {
         Color(UIColor.systemGray6)
             VStack{
                 RoundedRectangle(cornerRadius: 40)
-                    .frame(height:400)
+                    .frame(height:320)
                     .foregroundColor(Color(UIColor.systemGray6))
-                    .shadow(color: .white, radius: 7, x: -8, y: -8)
-                    .shadow(color: .gray, radius: 10, x: 8, y: 8)
+                    .shadow(color: .white, radius: 7, x: -14, y: -8)
+                    .shadow(color: .gray, radius: 10, x: 14, y: 8)
                     .overlay(
                         VStack(alignment: .leading){
                 HStack{
@@ -43,7 +43,7 @@ struct ProfilView: View {
                                     .foregroundColor(.yellow)
                                     .frame(width: 50.0)
                             }
-                        }.accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        }
                     }.shadow(color: .white, radius: 3, x: -5, y: -5)
                     .shadow(color: .gray, radius: 3, x: 5, y: 5)
                     VStack(alignment: .leading){
@@ -59,15 +59,35 @@ struct ProfilView: View {
                         Text("Objectifs: Régularité et Résultat")
                     }
                
-                }.padding(.top)
+                }.padding(.top, -30)
                             Text("Traitements:")
+                                .padding()
+                               
                             Text("Contre-indications:")
+                                .padding([.leading, .bottom, .trailing])
                     })
-                    .padding(.top)
+                    .padding(.top, -29.0)
                     .padding()
-                        
+                HStack{
                 Text("Suivi")
+                    .font(.title)
+                    Spacer()
+                    //Picker()
+                }.padding(.leading, 23.0)
                 GraphView()
+                
+                Button(action: {})
+                {
+                    Capsule()
+                        .foregroundColor(Color(UIColor.systemGray6))
+                         .frame(width: 330.0, height: 50.0)
+                        .shadow(color: .white, radius: 3, x: -5, y: -5)
+                        .shadow(color: .gray, radius: 3, x: 5, y: 5)
+                        .overlay(Text("Effectuer le suivi").foregroundColor(.black))
+                       
+                    
+                }.padding()
+            
             }.padding(.top)
        }.edgesIgnoringSafeArea(.all)
     }
