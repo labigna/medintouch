@@ -28,7 +28,7 @@ struct ContentView: View {
                                     .overlay(Button(action: {},
                                            label:
                                         {Text("< ").foregroundColor(.gray)
-                                            .padding(.leading, 2.0)
+                                            .padding([.leading, .bottom], 2.0)
                                             
                                     }
                                     ))
