@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
                        ZStack{
+                        
                                 Image("fond1")
                                     .resizable()
                                     .edgesIgnoringSafeArea(.all)
@@ -29,19 +31,24 @@ struct ContentView: View {
                                        .font(.title)
                                         .padding()
                            
+        
+        //    description.overlay(
         HStack{
-        //    description
+            
+          
+//            .font(.system(size:15)).foregroundColor(.gray).padding()
                                          Text("Le thym connu pour ses vertus bienfaisantes contre la toux. une bonne infusion de thym,par exemple,calme facilement les épisodes de toux et rhinopharyngés.")
                                              .font(.subheadline)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                                             .padding(.all, 35.0)
         }
-                                    
-       RoundedRectangle(cornerRadius: 20)
-        .fill(Color.offWhite)
-          .frame(width: 120.0, height: 120.0)
-
+                                
+      Image("fond1")
+            .resizable()
+       .mask(Circle())
+          .frame(width: 320.0, height: 220.0)
+        
         .overlay(
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
