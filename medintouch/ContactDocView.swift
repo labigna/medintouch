@@ -16,7 +16,8 @@ struct ContactDocView: View {
                             .resizable()
                             .edgesIgnoringSafeArea(.all)
                         
-                        Image ("avatar")
+                        Image ("Medecin")
+                            
                         .resizable()
                         .frame(width: 220.0, height: 210.0)
                             .padding(.bottom, 300.0)
@@ -29,11 +30,10 @@ struct ContactDocView: View {
                             Text ("Homéopathe")
                                      .font(.title)
 HStack{
-                                 Text("12 Place de gaulle 13001 Marseille 07 98 65 98 72  03 54 65 78 98.")
+                                 Text("12 Place de gaulle 13001 Marseille  07 98 65 98 72  03 54 65 78 98.")
                                      .font(.subheadline)
-                                     .foregroundColor(Color.black)
-                                    
-                                  
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.leading)
     
     Text("Consultations                Du lundi au vendredi De 9h à 17h")
         .multilineTextAlignment(.leading)
@@ -43,23 +43,25 @@ HStack{
                             HStack{
 // phone
                                 RoundedRectangle(cornerRadius: 10)
-                                .padding(.trailing, -30.0)
-                                .frame(width: 100.0, height: 35.0)
+                                .padding(0.0)
+                                .frame(width: 140.0, height: 35.0)
                                 .foregroundColor(Color.purple)
                                 .overlay(
-                                    Image("phone")
+                                 Image("phone")
                                 .foregroundColor(.white))
 // rdv
-                                    RoundedRectangle(cornerRadius: 10)
-                                .padding(.trailing, -30.0)
-                                .frame(width: 100.0, height: 35.0)
+                                RoundedRectangle(cornerRadius: 10)
+//                                .padding(.trailing, -30.0)
+                                .frame(width: 140.0, height: 35.0)
                                 .foregroundColor(Color.purple)
                                 .overlay(
                                             Text("RDV")
                                 .fontWeight(.bold)
-                                .foregroundColor(.white))
+                                                .foregroundColor(.black)
+                                                .opacity(1.0)
+                                                .multilineTextAlignment(.center))
                                 }
-                                .padding( [.top, .leading], 60.0)
+                            .padding( 3.0)
                             
                             }
                            
