@@ -44,7 +44,29 @@ struct Suggestions: View {
                 .bold()
                 .font(.system(size:14))
             
-            Rectangle()
+            RoundedRectangle(cornerRadius: 20)
+            .fill(Color.breakWhite)
+              .frame(width: 320.0, height: 300.0)
+
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 4)
+                    .blur(radius: 4)
+                    .offset(x: 2, y: 2)
+                    .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .topLeading, endPoint:.bottomTrailing))))
+            .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.white, lineWidth: 4)
+                .blur(radius: 4)
+                .offset(x: -2, y: -2)
+                .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .bottomTrailing, endPoint:.topLeading)
+                )
+            )
+                .overlay(Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices...")
+                    .font(.system(size:15)).foregroundColor(.gray).padding()
+                )
+            )
+            /*Rectangle()
                 .frame(width: 320.0, height: 300.0)
                 .foregroundColor(.breakWhite).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
                 .shadow(color: Color.white.opacity(0.2), radius: 10, x: 0, y: 0)
@@ -52,7 +74,7 @@ struct Suggestions: View {
                 .foregroundColor(.white))
                 .overlay(Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices...")
                 .font(.system(size:15)).foregroundColor(.gray).padding()
-            )
+            )*/
             
         }
     }
