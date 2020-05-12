@@ -49,14 +49,14 @@ struct ContentView: View {
                  .frame(width: -15.0, height: 67.0)
              .multilineTextAlignment(.center)
          //heure d'ouverture
-             Text("pereblaize.fr\n ouverture:\n 09:30–18:30")
+             Text("pereblaize.fr\nouverture:\n09:30–18:30")
                  .font(.subheadline)
                  .fontWeight(.light)
                  .foregroundColor(Color.black)
                  .multilineTextAlignment(.leading)
                  .padding([.top, .leading], -18.0)
          }
-         .padding(.leading, -17.0)
+         .padding(.leading, -26.0)
 
                                      HStack{
                                          
