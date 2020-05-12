@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C78C1E246AC2F300C8C34E /* categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C1D246AC2F300C8C34E /* categorie.swift */; };
 		3D347A9F2464374F00EC688F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347A9E2464374F00EC688F /* SwiftUIView.swift */; };
 		3D347AA12464376A00EC688F /* poulpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347AA02464376A00EC688F /* poulpy.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03C78C1D246AC2F300C8C34E /* categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categorie.swift; sourceTree = "<group>"; };
 		3D347A9E2464374F00EC688F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		3D347AA02464376A00EC688F /* poulpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poulpy.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				71B2BA12246424F8003D84CE /* Preview Content */,
 				3D347A9E2464374F00EC688F /* SwiftUIView.swift */,
 				3D347AA02464376A00EC688F /* poulpy.swift */,
+				03C78C1D246AC2F300C8C34E /* categorie.swift */,
 			);
 			path = medintouch;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
+				03C78C1E246AC2F300C8C34E /* categorie.swift in Sources */,
 				3D347AA12464376A00EC688F /* poulpy.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				3D347A9F2464374F00EC688F /* SwiftUIView.swift in Sources */,
