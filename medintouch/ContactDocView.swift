@@ -37,7 +37,7 @@ struct ContactDocView: View {
                    
                             Text ("Homéopathe")
                                      .font(.title)
-                                .padding(.bottom, -17.0)
+                                .padding(.vertical, -13.0)
 HStack{
 //    Contact
                                  Text("12 Place de gaulle\n13001 Marseille\n07 98 65 98 72\n03 54 65 78 98")
@@ -60,6 +60,7 @@ HStack{
                                     }
 
                             HStack{
+                                
 // Boutton phone
                                 RoundedRectangle(cornerRadius: 10)
                                 .padding(0.0)
