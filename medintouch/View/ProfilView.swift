@@ -19,6 +19,7 @@ struct ProfilView: View {
                     .shadow(color: .white, radius: 7, x: -8, y: -8)
                     .shadow(color: .gray, radius: 10, x: 8, y: 8)
                     .overlay(
+                        VStack(alignment: .leading){
                 HStack{
                     ZStack{
                         Capsule(style: .continuous)
@@ -41,9 +42,8 @@ struct ProfilView: View {
                                     .padding(.top, 5.0)
                                     .foregroundColor(.yellow)
                                     .frame(width: 50.0)
-                                
                             }
-                        }
+                        }.accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                     }.shadow(color: .white, radius: 3, x: -5, y: -5)
                     .shadow(color: .gray, radius: 3, x: 5, y: 5)
                     VStack(alignment: .leading){
@@ -58,11 +58,16 @@ struct ProfilView: View {
                         }.padding(.vertical)
                         Text("Objectifs: Régularité et Résultat")
                     }
-                    
-                }.padding(.top))
+               
+                }.padding(.top)
+                            Text("Traitements:")
+                            Text("Contre-indications:")
+                    })
                     .padding(.top)
                     .padding()
-                Spacer()
+                        
+                Text("Suivi")
+                GraphView()
             }.padding(.top)
        }.edgesIgnoringSafeArea(.all)
     }

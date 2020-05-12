@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		715D3A0E2469496D002BEE91 /* ProfilM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A0D2469496D002BEE91 /* ProfilM.swift */; };
 		715D3A1024697595002BEE91 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A0F24697595002BEE91 /* ProfilView.swift */; };
+		715D3A12246A8F68002BEE91 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A11246A8F68002BEE91 /* GraphView.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
 		71B2BA11246424F8003D84CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA10246424F8003D84CE /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		715D3A0D2469496D002BEE91 /* ProfilM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilM.swift; sourceTree = "<group>"; };
 		715D3A0F24697595002BEE91 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		715D3A11246A8F68002BEE91 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B2BA0C246424F7003D84CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				715D3A0F24697595002BEE91 /* ProfilView.swift */,
+				715D3A11246A8F68002BEE91 /* GraphView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715D3A12246A8F68002BEE91 /* GraphView.swift in Sources */,
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
 				715D3A0E2469496D002BEE91 /* ProfilM.swift in Sources */,
 				715D3A1024697595002BEE91 /* ProfilView.swift in Sources */,
