@@ -13,23 +13,32 @@ struct Suggestions: View {
     
     var body: some View {
         
-        
-        
+
+        ZStack{
+            Image("fond1").resizable().edgesIgnoringSafeArea(.all)
+    
         VStack{
+            
             HStack{
                 Spacer()
                 
-                // Bouton Back
+// Bouton Back
+                //NavigationLink(destination: , label: {
                 ZStack{
                     Circle()
-                        .frame(width: 40.0, height: 40.0).foregroundColor(.breakWhite2).shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                Button(action: {},
+                        .frame(width: 30.0, height: 30.0).foregroundColor(.white).shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                /*Button(action: {},
                        label:
-                    {Text("<").foregroundColor(.gray).font(.system(size:30))
+                    {*/
+                    Text("<").foregroundColor(.gray)
+                        //.padding(.leading, 15.0)
+                        .font(.system(size:30))
                         
+                //}
+                //)
                 }
-                    )
-                }
+                //}
+                //)
                 Spacer()
                 Text("Suggestions").bold().font(.system(size: 30))
                 Spacer()
@@ -38,7 +47,7 @@ struct Suggestions: View {
                 Image("épices").resizable().aspectRatio(contentMode: .fill)
                     .frame(width: 320, height: 180).mask(RoundedRectangle(cornerRadius: 20)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
             
-            // Titres
+// Titres
             Text("Epices et bien-être:")
                 .bold()
                 .font(.system(size:20)).padding(.vertical, 8.0)
@@ -46,7 +55,7 @@ struct Suggestions: View {
                 .bold()
                 .font(.system(size:14))
             
-            // Cadre et texte
+// Cadre et texte
             RoundedRectangle(cornerRadius: 20)
             .fill(Color.breakWhite)
               .frame(width: 320.0, height: 300.0)
@@ -78,7 +87,8 @@ struct Suggestions: View {
                     )
             
             
-        }.edgesIgnoringSafeArea(.top)
+        }//.edgesIgnoringSafeArea(.top)
+        }
     }
 }
 

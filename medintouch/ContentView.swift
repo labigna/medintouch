@@ -10,11 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-        Text("Suggestions")
-            Image("cerf")
+        
+        Text("Helle World!")
             
-    }
         
 }
 }
