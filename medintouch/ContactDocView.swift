@@ -17,11 +17,28 @@ struct ContactDocView: View {
                         Image("fond1")
                             .resizable()
                             .edgesIgnoringSafeArea(.all)
-                       
-                        
-                      
+                      VStack{
+                      HStack{
+                                                  Circle()
+                                                                                     .frame(width: 30.0, height: 30.0)
+                                                                                     .foregroundColor(.white)
+                                                                                 .overlay(Button(action: {},
+                                                                                        label:
+                                                                                     {Text("< ").foregroundColor(.gray)
+                                                                                         .padding([.leading, .bottom], 2.0)
+                                                                                         
+                                                                                 }
+                                                                                 ))
+                                             //                                        titre
+                                                                                     .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                                                                     
+                                                                                             Spacer()
+                                                                                             Text("PHARMACIE").font(.title).bold()
+                                                                                                 .padding(.trailing, 15.0)}
+                        .padding([.leading, .bottom], 42.0)
                         
                         VStack{
+                            
                             Image ("Medecin")
                             
                                     .resizable()
@@ -99,3 +116,4 @@ struct ContactDocView_Previews: PreviewProvider {
 }
  
 
+}
