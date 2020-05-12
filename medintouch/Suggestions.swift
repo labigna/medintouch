@@ -18,6 +18,8 @@ struct Suggestions: View {
         VStack{
             HStack{
                 Spacer()
+                
+                // Bouton Back
                 ZStack{
                     Circle()
                         .frame(width: 40.0, height: 40.0).foregroundColor(.breakWhite2).shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
@@ -29,14 +31,14 @@ struct Suggestions: View {
                     )
                 }
                 Spacer()
-                Text("Suggestions").bold().font(.system(size: 30)).padding(.vertical, 21.0)
+                Text("Suggestions").bold().font(.system(size: 30))
                 Spacer()
-            }
-            ZStack{
-                Image("cerf").resizable().aspectRatio(contentMode: .fill)
-                    .frame(width: 320, height: 180).mask(RoundedRectangle(cornerRadius: 25)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
-            }
-                
+            }.padding(.bottom, 30.0)
+            
+                Image("épices").resizable().aspectRatio(contentMode: .fill)
+                    .frame(width: 320, height: 180).mask(RoundedRectangle(cornerRadius: 20)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
+            
+            // Titres
             Text("Epices et bien-être:")
                 .bold()
                 .font(.system(size:20)).padding(.vertical, 8.0)
@@ -44,6 +46,7 @@ struct Suggestions: View {
                 .bold()
                 .font(.system(size:14))
             
+            // Cadre et texte
             RoundedRectangle(cornerRadius: 20)
             .fill(Color.breakWhite)
               .frame(width: 320.0, height: 300.0)
@@ -62,21 +65,20 @@ struct Suggestions: View {
                 .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .bottomTrailing, endPoint:.topLeading)
                 )
             )
-                .overlay(Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices...")
+                .overlay(
+                    VStack{
+                        Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices sont-elles vraiment une clé pour se soigner ou sont-elles de simples compléments? Les réponses avec un chef passionné par les épices, et une nutritionniste spécialiste du sujet.")
                     .font(.system(size:15)).foregroundColor(.gray).padding()
+                        Text("Les épices, une richesse pour nos papilles et pour notre santé? Depuis l'Antiquité, l'homme traverse océans et continents en quête d'épices pour cuisiner mais aussi pour se soigner. Cette science a traversé les siècles et intéresse aujourd'hui les médecins comme les nutritionnistes. Le premier intérêt des épices est d'alléger les plats comme le confirme Nathalie Hutter-Lardeau, nutritionniste: Les épices vont permettre d'alléger en sucres, en gras, en sel mais pas d'alléger en goût. Il faut justement avoir une palette de goûts et des vertus santé")
+                        .font(.system(size:15)).foregroundColor(.gray).padding()
+                }
                 )
-            )
-            /*Rectangle()
-                .frame(width: 320.0, height: 300.0)
-                .foregroundColor(.breakWhite).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
-                .shadow(color: Color.white.opacity(0.2), radius: 10, x: 0, y: 0)
-                .padding().overlay(Rectangle().frame(width: 280.0, height: 265.0)
-                .foregroundColor(.white))
-                .overlay(Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices...")
-                .font(.system(size:15)).foregroundColor(.gray).padding()
-            )*/
+                    
+                    
+                    )
             
-        }
+            
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 

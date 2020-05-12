@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "cerf.jpg",
+      "filename" : "épices.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "cerf-1.jpg",
+      "filename" : "épices-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "cerf-2.jpg",
+      "filename" : "épices-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
