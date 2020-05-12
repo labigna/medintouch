@@ -16,28 +16,40 @@ struct ContactDocView: View {
                             .resizable()
                             .edgesIgnoringSafeArea(.all)
                         
-                        Image ("Medecin")
-                            
-                        .resizable()
-                        .frame(width: 220.0, height: 210.0)
-                            .padding(.bottom, 300.0)
+                      
                         
                         VStack{
+                            Image ("Medecin")
+                                                   .resizable()
+                                                       .aspectRatio(contentMode: .fill)
+                                                   .frame(width: 220.0, height: 210.0)
+                                                   .mask(Circle())
                             
                             Text("Torrel Yannick")
-                                .padding(.top, 141.0)
+                                .padding(.bottom)
+                             
                             
                             Text ("Homéopathe")
                                      .font(.title)
+                                .padding(.bottom, -17.0)
 HStack{
-                                 Text("12 Place de gaulle 13001 Marseille  07 98 65 98 72  03 54 65 78 98.")
+    
+                                 Text("12 Place de gaulle\n13001 Marseille\n07 98 65 98 72\n03 54 65 78 98")
                                      .font(.subheadline)
-                                    .foregroundColor(Color.black)
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.leading)
+                                    .padding(.trailing, 16.0)
+    Divider()
+        .padding([.top, .leading, .trailing], 12.0)
+        .frame(width: -8.0, height: 123.0)
+    .multilineTextAlignment(.center)
     
-    Text("Consultations                Du lundi au vendredi De 9h à 17h")
+    Text(" Consultations \n Du lundi au vendredi\n De 9h à 17h")
+        .font(.subheadline)
+        .fontWeight(.light)
+        .foregroundColor(Color.black)
         .multilineTextAlignment(.leading)
-    
+        .padding(.leading, 3.0)
                                     }
 
                             HStack{
