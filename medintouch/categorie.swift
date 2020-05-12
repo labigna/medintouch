@@ -77,14 +77,26 @@ struct categorie: View {
             .mask(RoundedRectangle(cornerRadius: 20))
             .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
             .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
-                                  
-            .overlay( Text("categorie is").foregroundColor(.white)
-                                                                         .font(.caption)
-                .fontWeight(.semibold))
+             
+            .overlay(RoundedRectangle(cornerRadius: 10)
+                     .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                     .foregroundColor(.black)
+                     .opacity(0.5)
+                     .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                     .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+            .overlay(
+                Text("Compléments")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                )
+                )
+                
             
-                                                                
-                                        
-                                 Spacer()
+                
+                
+                Spacer()
+                
         Image ("water")
             .resizable()
             .aspectRatio(contentMode: .fill)
@@ -93,6 +105,19 @@ struct categorie: View {
             .mask(RoundedRectangle(cornerRadius: 20))
             .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
             .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                        .overlay(RoundedRectangle(cornerRadius: 10)
+                                                             .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                             .foregroundColor(.black)
+                                                             .opacity(0.5)
+                                                             .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                             .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                    .overlay(
+                                                            Text("Aquathérapie")
+                                                                .font(.footnote)
+                                                                .fontWeight(.semibold)
+                                        .foregroundColor(Color.white)
+                                                        )
+                                                        )
                                     }
                                     .padding([.top, .leading, .trailing], 26.0)
                                     
@@ -104,6 +129,19 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                        .overlay(RoundedRectangle(cornerRadius: 10)
+                                                             .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                             .foregroundColor(.black)
+                                                             .opacity(0.5)
+                                                             .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                             .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                    .overlay(
+                                                            Text("Aromathérapie")
+                                                                .font(.footnote)
+                                                                .fontWeight(.semibold)
+                                        .foregroundColor(Color.white)
+                                                        )
+                                                        )
                               Spacer()
         Image ("aliment")
              .resizable()
@@ -112,8 +150,22 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                        .overlay(RoundedRectangle(cornerRadius: 10)
+                                                             .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                             .foregroundColor(.black)
+                                                             .opacity(0.5)
+                                                             .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                             .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                    .overlay(
+                                                            Text("Alimentation")
+                                                                .font(.footnote)
+                                                                .fontWeight(.semibold)
+                                        .foregroundColor(Color.white)
+                                                        )
+                                                        )
                                                                        }
                                     .padding([.top, .leading, .trailing], 26.0)
+                                
                                 
                                 HStack{
          Image ("oil")
@@ -123,6 +175,22 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                    
+            .overlay(RoundedRectangle(cornerRadius: 10)
+                                                         .frame(width: 100.0, height: 40.0)
+                                                         .foregroundColor(.black)
+                                                         .opacity(0.5)
+                                                         .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                .overlay(
+                                                    
+                                                        Text("Huiles")
+                                                            .font(.footnote)
+                                                            .fontWeight(.semibold)
+                                    .foregroundColor(Color.white)
+                                                    )
+                                                    
+                                                    )
                                                           Spacer()
          Image ("yoga")
              .resizable()
@@ -131,6 +199,19 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                                         .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                         .foregroundColor(.black)
+                                                         .opacity(0.5)
+                                                         .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                .overlay(
+                                                        Text("Yoga")
+                                                            .font(.footnote)
+                                                            .fontWeight(.semibold)
+                                    .foregroundColor(Color.white)
+                                                    )
+                                                    )
                                                    }
             .padding([.top, .leading, .trailing], 26.0)
                                 HStack{
@@ -142,6 +223,19 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                                         .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                         .foregroundColor(.black)
+                                                         .opacity(0.5)
+                                                         .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                .overlay(
+                                                        Text("Beauté maison")
+                                                            .font(.footnote)
+                                                            .fontWeight(.semibold)
+                                    .foregroundColor(Color.white)
+                                                    )
+                                                    )
                                                           Spacer()
          Image ("massage")
              .resizable()
@@ -150,6 +244,19 @@ struct categorie: View {
              .mask(RoundedRectangle(cornerRadius: 20))
              .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
              .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                                         .frame(width: 100.0, height: 40.0, alignment: .bottom)
+                                                         .foregroundColor(.black)
+                                                         .opacity(0.5)
+                                                         .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                                         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                .overlay(
+                                                        Text("Massage")
+                                                            .font(.footnote)
+                                                            .fontWeight(.semibold)
+                                    .foregroundColor(Color.white)
+                                                    )
+                                                    )
                                                   }
              .padding([.top, .leading, .trailing], 26.0)
                                     }
