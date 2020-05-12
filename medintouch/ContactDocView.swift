@@ -9,42 +9,49 @@
 import SwiftUI
 
 struct ContactDocView: View {
+    
     var body: some View {
+        
 //fond
                     ZStack{
                         Image("fond1")
                             .resizable()
                             .edgesIgnoringSafeArea(.all)
+                       
                         
                       
                         
                         VStack{
                             Image ("Medecin")
-                                                   .resizable()
-                                                       .aspectRatio(contentMode: .fill)
-                                                   .frame(width: 220.0, height: 210.0)
-                                                   .mask(Circle())
                             
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 220.0, height: 210.0)
+                                    .mask(Circle())
+                              
+                            .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
+                            .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+//NOM et Metier
                             Text("Torrel Yannick")
-                                .padding(.bottom)
-                             
-                            
+                                .padding(.vertical)
+                   
                             Text ("Homéopathe")
                                      .font(.title)
                                 .padding(.bottom, -17.0)
 HStack{
-    
+//    Contact
                                  Text("12 Place de gaulle\n13001 Marseille\n07 98 65 98 72\n03 54 65 78 98")
                                      .font(.subheadline)
                                     .fontWeight(.light)
-                                    .multilineTextAlignment(.leading)
+                                    .multilineTextAlignment(.trailing)
                                     .padding(.trailing, 16.0)
+//barre de separation
     Divider()
-        .padding([.top, .leading, .trailing], 12.0)
-        .frame(width: -8.0, height: 123.0)
+        .padding([.top, .leading], 4.0)
+        .frame(width: -15.0, height: 120.0)
     .multilineTextAlignment(.center)
-    
-    Text(" Consultations \n Du lundi au vendredi\n De 9h à 17h")
+//heure d'ouverture
+    Text("  Consultations \n  Du lundi au vendredi\n  De 9h à 17h")
         .font(.subheadline)
         .fontWeight(.light)
         .foregroundColor(Color.black)
@@ -53,7 +60,7 @@ HStack{
                                     }
 
                             HStack{
-// phone
+// Boutton phone
                                 RoundedRectangle(cornerRadius: 10)
                                 .padding(0.0)
                                 .frame(width: 140.0, height: 35.0)
@@ -61,9 +68,10 @@ HStack{
                                 .overlay(
                                  Image("phone")
                                 .foregroundColor(.white))
-// rdv
+                                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
+                                .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+// boutton rdv
                                 RoundedRectangle(cornerRadius: 10)
-//                                .padding(.trailing, -30.0)
                                 .frame(width: 140.0, height: 35.0)
                                 .foregroundColor(Color.purple)
                                 .overlay(
@@ -72,6 +80,8 @@ HStack{
                                                 .foregroundColor(.black)
                                                 .opacity(1.0)
                                                 .multilineTextAlignment(.center))
+                                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
+                                .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
                                 }
                             .padding( 3.0)
                             

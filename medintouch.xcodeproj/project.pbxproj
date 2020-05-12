@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D20223F246AA2B7009529B1 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20223E246AA2B7009529B1 /* SwiftUIView.swift */; };
 		3DAFE3CC2469977100AAC85D /* ContactDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFE3CB2469977100AAC85D /* ContactDocView.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D20223E246AA2B7009529B1 /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = "../../kala teste/neo teste/neo/neo/SwiftUIView.swift"; sourceTree = "<group>"; };
 		3DAFE3CB2469977100AAC85D /* ContactDocView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDocView.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
 				3DAFE3CB2469977100AAC85D /* ContactDocView.swift */,
+				3D20223E246AA2B7009529B1 /* SwiftUIView.swift */,
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
@@ -153,6 +156,7 @@
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
+				3D20223F246AA2B7009529B1 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
