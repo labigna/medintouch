@@ -13,6 +13,8 @@
 		71B2BA11246424F8003D84CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA10246424F8003D84CE /* Assets.xcassets */; };
 		71B2BA14246424F8003D84CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA13246424F8003D84CE /* Preview Assets.xcassets */; };
 		71B2BA17246424F8003D84CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */; };
+		B8E680E7246AC8470096EBA0 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E680E6246AC8470096EBA0 /* ArticlesView.swift */; };
+		B8E680E9246AC9DE0096EBA0 /* extensionColorArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E680E8246AC9DE0096EBA0 /* extensionColorArticle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		71B2BA13246424F8003D84CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71B2BA16246424F8003D84CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71B2BA18246424F8003D84CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E680E6246AC8470096EBA0 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		B8E680E8246AC9DE0096EBA0 /* extensionColorArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionColorArticle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		71B2BA09246424F7003D84CE /* medintouch */ = {
 			isa = PBXGroup;
 			children = (
+				B8E680E6246AC8470096EBA0 /* ArticlesView.swift */,
 				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
 				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
@@ -63,6 +68,7 @@
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
 				71B2BA12246424F8003D84CE /* Preview Content */,
+				B8E680E8246AC9DE0096EBA0 /* extensionColorArticle.swift */,
 			);
 			path = medintouch;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
+				B8E680E7246AC8470096EBA0 /* ArticlesView.swift in Sources */,
+				B8E680E9246AC9DE0096EBA0 /* extensionColorArticle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
