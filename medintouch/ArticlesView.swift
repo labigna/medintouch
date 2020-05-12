@@ -51,8 +51,8 @@ struct ArticlesView: View {
         // Cadre et texte
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.white)
-                      .frame(width: 320.0, height: 320.0)
-
+                      .frame(width: 320.0, height: 380.0)
+                    
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
                             .stroke(Color.black, lineWidth: 4)
@@ -75,7 +75,7 @@ struct ArticlesView: View {
                                     .font(.system(size:15)).foregroundColor(.gray).padding()
                                 Text("Fatigue, déprime :").font(.system(size:15)).foregroundColor(.black)
                                     .padding(.bottom, -12.0)
-                                Text("l'action détoxifiante du macérat de jeunes pousses de romarin est également visible sur le système nerveux. Il va agir en améliorant la mémoire, diminuant la fatique et en apportant du bien-être.")
+                                Text("l'action détoxifiante du macérat de jeunes pousses de romarin est également visible sur le système nerveux. Il va agir en améliorant la mémoire, diminuant la fatigue et en apportant du bien-être.")
                                 .font(.system(size:15)).foregroundColor(.gray).padding()
                                 Text("Dérèglements de la thyroïde :").font(.system(size:15)).foregroundColor(.black)
                                     .padding(.bottom, -12.0)
