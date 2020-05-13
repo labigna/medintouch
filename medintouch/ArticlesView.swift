@@ -68,6 +68,8 @@ struct ArticlesView: View {
                         )
                     )
                         .overlay(
+                            
+                            
                             VStack{
                                 Text("Hépatite, cirrhose :").font(.system(size:15)).foregroundColor(.black)
                                     .padding(.bottom, -12.0)
