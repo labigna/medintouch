@@ -38,11 +38,11 @@ struct ArticlesView: View {
                         //Spacer()
                     }.padding(.trailing, 36.0).padding(.bottom, 11.0)
                     
-                        Image("bourgeon").resizable().aspectRatio(contentMode: .fill)
+                        Image("romarin").resizable().aspectRatio(contentMode: .fill)
                             .frame(width: 280, height: 130).mask(RoundedRectangle(cornerRadius: 20)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10).padding(.top, -13.0)
                     
         // Titres
-                    Text("Botanique:")
+                    Text("Le romarin:")
                         .bold()
                         .font(.system(size:20)).padding(.vertical, 8.0)
                     Text("Les différents bienfaits du bourgeon de romarin:")
