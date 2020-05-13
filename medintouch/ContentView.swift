@@ -51,7 +51,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.vertical, 4.0)
             
-            
+//   descption
             Image("fond1")
                 .resizable()
                 .mask(Circle())
@@ -69,7 +69,7 @@ struct ContentView: View {
                         .blur(radius: 4)
                         .offset(x: -2, y: -2)
                         .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .bottomTrailing, endPoint:.topLeading))))
-                .overlay(Text("Le thym connu pour ses vertus bienfaisantes contre la toux. une bonne infusion de thym, par exemple, calme facilement les épisodes de toux et rhinopharyngés.")
+                .overlay(Text("Le thym connu pour ses vertus bienfaisantes contre la toux. une bonne infusion de thym, par exemple, calme facilement les épisodes de toux et rhinopharyngées.")
                     .font(.headline)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
