@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ProfilView: View {
+    
+    @State private var selectedGraph = 0
+    
     var body: some View {
        ZStack{
         Color(UIColor.systemGray6)
@@ -69,10 +72,15 @@ struct ProfilView: View {
                     .padding(.top, -29.0)
                     .padding()
                 HStack{
-                Text("Suivi")
+                Text("Suivi sur: le ginseng")
                     .font(.title)
                     Spacer()
-                    //Picker()
+                    Picker(selection: $selectedGraph)
+                        {
+                            Text("Jour").tag(0)
+                            Text("Semaine").tag(1)
+                            Text("Mois").tag(2)
+                        }
                 }.padding(.leading, 23.0)
                 GraphView()
                 
