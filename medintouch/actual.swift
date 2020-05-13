@@ -32,22 +32,6 @@ struct actual: View {
                 VStack{
                     HStack{
                                        Spacer()
-                    
-                           ZStack{
-         //Navigation bar
-      Circle()
-            .frame(width: 30.0, height: 30.0)
-            .foregroundColor(.white)
-            .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-           
-            
-           Button(action: {},
-              label:
-            {Text("< ").foregroundColor(.gray)
-                    }
-                    )
-                           }
-                           
                            
                                         Spacer()
                         Text("Actualités").font(.title).bold()
@@ -56,29 +40,35 @@ struct actual: View {
                     }
                     .padding(.all, -55.0)
                                        
-                    ZStack{
+                  
                    
            // Le saviez-vous ?
+                       
             Button(action: {}) {
+                  ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                                    .frame(width: 180.0, height: 40.0)
+                                    .foregroundColor(.white)
+                                    .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                    
+                                    .overlay(
+                                       Text("Le saviez-vous ? ")
+                                           .fontWeight(.light)
+                                           .foregroundColor(.black)
+                                         .font(.headline)
+                                        .padding(.all, 8.0))
+                        .padding(.leading, 280.0)
                 Image("saviez").renderingMode(.original).resizable()
-                               .frame(width: 120.0, height: 120.0)
+                 
+                    .frame(width: 120.0, height: 120.0)
                                .clipShape(Circle())
                                .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
                                .shadow(color: Color.white, radius: 10, x: -5, y: -5)
-       RoundedRectangle(cornerRadius: 10)
-                 .frame(width: 180.0, height: 40.0)
-                 .foregroundColor(.white)
-                 .shadow(color: Color.white, radius: 10, x: -5, y: -5)
-                 .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                 .overlay(
-                    
-                    Text("Le saviez-vous ? ")
-                        .fontWeight(.light)
-                        .foregroundColor(.black)
-                      .font(.headline)
-                        .padding(.all, 8.0))
                 }
                     }
+            .padding(.trailing, 160.0)
+                    
                                        Spacer()
                  
                         Text("Suggestions de saison")
