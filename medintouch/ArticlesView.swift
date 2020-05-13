@@ -32,7 +32,7 @@ struct ArticlesView: View {
                         //}
                         //)
                         Spacer()
-                            .padding(.trailing)
+                            .padding()
                         Text("Articles").bold().font(.system(size: 30))
                         Spacer()
                     }.padding(.bottom, 11.0)
@@ -49,8 +49,10 @@ struct ArticlesView: View {
                         .font(.system(size:14))
                     
         // Cadre et texte
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white)
+                    
+                    //Image("fond1").resizable().mask(Rectangle()).frame(width:320.0, height: 380.0)
+                        RoundedRectangle(cornerRadius: 20)
+                        .fill(Color("fondColor1"))
                       .frame(width: 320.0, height: 380.0)
                     
                     .overlay(
@@ -58,7 +60,10 @@ struct ArticlesView: View {
                             .stroke(Color.black, lineWidth: 4)
                             .blur(radius: 4)
                             .offset(x: 2, y: 2)
-                            .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .topLeading, endPoint:.bottomTrailing))))
+                            .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .topLeading, endPoint:.bottomTrailing)
+                            )
+                    )
+                        )
                     .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.white, lineWidth: 4)
@@ -68,32 +73,28 @@ struct ArticlesView: View {
                         )
                     )
                         .overlay(
-                            
-                            
                             VStack{
-                                Text("Hépatite, cirrhose :").font(.system(size:15)).foregroundColor(.black)
-                                    .padding(.bottom, -12.0)
+                                ScrollView{
+                                Text("Hépatite, cirrhose :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
+                                    .padding(.bottom, -12.0).padding(.top)
                                 Text("le macérat de jeunes pousses de romarin est sans conteste la plante du foie. En plus de régénérer le foie et le détoxifier, il participe à sa protection et agit ainsi sur l'ensemble de l'organisme. C'est également un anti-oxydant qui lutte contre la formation des radicaux libres et protège ainsi différents organes ou tissus.")
-                                    .font(.system(size:15)).foregroundColor(.gray).padding()
-                                Text("Fatigue, déprime :").font(.system(size:15)).foregroundColor(.black)
+                                    .font(.system(size:15)).foregroundColor(.black).padding()
+                                Text("Fatigue, déprime :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
                                     .padding(.bottom, -12.0)
                                 Text("l'action détoxifiante du macérat de jeunes pousses de romarin est également visible sur le système nerveux. Il va agir en améliorant la mémoire, diminuant la fatigue et en apportant du bien-être.")
-                                .font(.system(size:15)).foregroundColor(.gray).padding()
-                                Text("Dérèglements de la thyroïde :").font(.system(size:15)).foregroundColor(.black)
+                                .font(.system(size:15)).foregroundColor(.black).padding()
+                                Text("Dérèglements de la thyroïde :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
                                     .padding(.bottom, -12.0)
                                 Text("le macérat de jeunes pousses de romarin influence l'ensemble du corps en agissant sur le foie. Il permet de gérer notamment les dérèglements de certaines glandes comme la thyroïde par exemple.")
-                                .font(.system(size:15)).foregroundColor(.gray).padding()
-                        }
+                                .font(.system(size:15)).foregroundColor(.black).padding()
+                                }
+                                
+                            }
                         )
-                            
-                            
                             )
-                    
-                    
-                }//.edgesIgnoringSafeArea(.top)
+                    //.edgesIgnoringSafeArea(.top)
                 }
-       
-
+        }
     }
 }
 
