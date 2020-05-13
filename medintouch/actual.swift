@@ -75,12 +75,20 @@ struct actual: View {
                             .font(.headline)
                             .fontWeight(.thin)
                     
-                        HStack{
+                    
+                    ScrollView(.horizontal){
+                                HStack{
             // Articles
                   OneActualView(img: "epice", titre: "Epices et bien-être")
                        
                   OneActualView(img: "aloe", titre: "L'Aloe Vera")
-                        }
+                                    
+                                    OneActualView(img: "epice", titre: "Epices et bien-être")
+                                    
+                                    OneActualView(img: "aloe", titre: "L'Aloe Vera")
+                                }
+                            }
+                        
                       
                      Spacer()
                        
