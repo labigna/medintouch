@@ -16,7 +16,7 @@ struct ArticlesView: View {
                 VStack{
                     
                     HStack{
-                        Spacer()
+                        //Spacer()
                         
         // Bouton Back
                         //NavigationLink(destination: , label: {
@@ -30,12 +30,13 @@ struct ArticlesView: View {
                         
                         }
                         //}
-                        //)
+                        //}
+                            .padding(.leading, 38.0)
                         Spacer()
-                            .padding()
+                            
                         Text("Articles").bold().font(.system(size: 30))
-                        Spacer()
-                    }.padding(.bottom, 11.0)
+                        //Spacer()
+                    }.padding(.trailing, 36.0).padding(.bottom, 11.0)
                     
                         Image("bourgeon").resizable().aspectRatio(contentMode: .fill)
                             .frame(width: 280, height: 130).mask(RoundedRectangle(cornerRadius: 20)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10).padding(.top, -13.0)
@@ -50,7 +51,7 @@ struct ArticlesView: View {
                     
         // Cadre et texte
                     
-                    //Image("fond1").resizable().mask(Rectangle()).frame(width:320.0, height: 380.0)
+                    
                         RoundedRectangle(cornerRadius: 20)
                         .fill(Color("fondColor1"))
                       .frame(width: 320.0, height: 380.0)
@@ -92,7 +93,7 @@ struct ArticlesView: View {
                             }
                         )
                             )
-                    //.edgesIgnoringSafeArea(.top)
+                    
                 }
         }
     }
