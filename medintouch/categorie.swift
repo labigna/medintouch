@@ -34,39 +34,51 @@ struct categorie: View {
                             HStack{
                                                             
                                 ZStack{
+                               
 //Navigation bar
     Circle()
         .frame(width: 30.0, height: 30.0)
         .foregroundColor(.white)
         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-        .padding([.leading, .bottom], 15.0)
+        
                                       
                  Button(action: {},
                         label:
                                 {Text("< ").foregroundColor(.gray)
-                                           .padding([.leading, .bottom], 15.0)
+                                          
                                               }
                                             )
-                                          }
-                                                          Spacer()
+                                }
+                                                     Spacer()
    
                  Text("Recherche").font(.title).bold()
-                                  .padding([.bottom, .trailing], 15.0)
-                                                                    }
-                               Spacer()
+                            } .padding([.leading, .bottom, .trailing], 25.0)
+                      
+                       
+                 
  // Barre de recherche
                             VStack{
+                                
+                               
 
      TextField("🔎  Rechercher par mot-clef", text: self.$recherche)
-                      .padding(.all, 7.0)
-        .frame(width: 350.0, height: 35.0)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-                      .stroke(Color.white, lineWidth: 1)) .background(Color.white)
-                      .shadow(color: Color.black.opacity(0.3), radius: 10, x: 5, y: 5)
-                      .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+        .foregroundColor(Color.black)
+        .padding(.all, 33.0)
+        .frame(width: 350.0, height: 50.0)
+        .overlay( RoundedRectangle(cornerRadius: 20)
+                                                   .fill(Color.white)
+            .frame(width: 320.0, height: 44.0)
+                                                   .overlay(RoundedRectangle(cornerRadius: 20)
+                                                                       .stroke(Color.gray, lineWidth: 3)
+                                                                       .blur(radius: 3))
+                                                   .offset(x: 2, y: 4)
+                                                   .mask(RoundedRectangle(cornerRadius: 20)
+                                                   .fill(LinearGradient(gradient: Gradient (colors: [Color.black,Color.clear]), startPoint: .topLeading, endPoint: .bottomTrailing)))
+            )
  
-                             
+                            }
 // Image catégorie + txt
+                                ScrollView{
                                     HStack{
  
              OneCategorieView(img: "aliment", titre: "Alimentation")
@@ -94,9 +106,12 @@ struct categorie: View {
                                     Spacer()
               OneCategorieView(img: "yoga", titre: "Yoga") }
                                      .padding([.top, .leading, .trailing], 26.0)
+                                
+                                    
                                     }
-                                    }
-                                    }
+                            }
+                         }
+                         
                                 }
                               }
                            }

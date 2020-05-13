@@ -63,13 +63,21 @@ struct actual: View {
                  
                     .frame(width: 120.0, height: 120.0)
                                .clipShape(Circle())
+                   
+                    .overlay(
+                       Circle().stroke(Color.gray, lineWidth: 1))
                                .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
                                .shadow(color: Color.white, radius: 10, x: -5, y: -5)
                 }
                     }
             .padding(.trailing, 160.0)
                     
-                                       Spacer()
+                                         Divider()
+                                             .padding([.top, .leading], 4.0)
+                                            .frame(width: 300.0, height: 43.0)
+                                         .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.3), radius: 8, x: 5, y: 5)
+                                                  .shadow(color: Color.white, radius: 10, x: -5, y: -5)
                  
                         Text("Suggestions de saison")
                             .font(.headline)
