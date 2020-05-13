@@ -31,36 +31,38 @@ struct categorie: View {
                                
                          VStack{
                             
-                            HStack{
-                                                            
-                                ZStack{
-                               
-//Navigation bar
-    Circle()
-        .frame(width: 30.0, height: 30.0)
-        .foregroundColor(.white)
-        .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-        
-                                      
-                 Button(action: {},
-                        label:
-                                {Text("< ").foregroundColor(.gray)
-                                          
-                                              }
-                                            )
-                                }
-                                                     Spacer()
-   
-                 Text("Recherche").font(.title).bold()
-                            } .padding([.leading, .bottom, .trailing], 25.0)
+                        HStack{
+                                     
+                                                       Spacer()
+                                                                  ZStack{
+                                                                          
+                                           //Navigation bar
+                                               Circle()
+                                                   .frame(width: 30.0, height: 30.0)
+                                                   .foregroundColor(.white)
+                                                   .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                                                   
+                                                                                 
+                                                            Button(action: {},
+                                                                   label:
+                                                                           {Text("< ").foregroundColor(.gray)
+                                                                                     
+                                                                                         }
+                                                                                       )
+                                                                           }
+                                                        Spacer()
+                                                        Spacer()
+                                        Text("Recherche").font(.title).bold()
+                                                         
+                                                        Spacer()
+                        }
+                        .padding(.top, -60.0)
                       
                        
                  
  // Barre de recherche
                             VStack{
                                 
-                               
-
      TextField("🔎  Rechercher par mot-clef", text: self.$recherche)
         .foregroundColor(Color.black)
         .padding(.all, 33.0)

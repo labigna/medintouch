@@ -87,13 +87,15 @@ struct actual: View {
                     ScrollView(.horizontal){
                                 HStack{
             // Articles
+                                    
                   OneActualView(img: "epice", titre: "Epices et bien-être")
                        
                   OneActualView(img: "aloe", titre: "L'Aloe Vera")
                                     
-                                    OneActualView(img: "epice", titre: "Epices et bien-être")
+                                    OneActualView(img: "coquelicot", titre: "Le pavot")
                                     
-                                    OneActualView(img: "aloe", titre: "L'Aloe Vera")
+                                    OneActualView(img: "nut", titre: "La châtaigne")
+                                     OneActualView(img: "tisane", titre: "Infusion aux herbes")
                                 }
                             }
                         
