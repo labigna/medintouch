@@ -16,7 +16,7 @@ struct ArticlesView: View {
                 VStack{
                     
                     HStack{
-                        //Spacer()
+                        
                         
         // Bouton Back
                         //NavigationLink(destination: , label: {
@@ -50,11 +50,9 @@ struct ArticlesView: View {
                         .font(.system(size:14))
                     
         // Cadre et texte
-                    
-                    
                         RoundedRectangle(cornerRadius: 20)
                         .fill(Color("fondColor1"))
-                      .frame(width: 320.0, height: 380.0)
+                      .frame(width: 320.0, height: 370.0)
                     
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
