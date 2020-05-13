@@ -57,7 +57,7 @@ struct Suggestions: View {
             
 // Cadre et texte
             RoundedRectangle(cornerRadius: 20)
-            .fill(Color.breakWhite)
+            .fill(Color("fondColor1"))
               .frame(width: 320.0, height: 350.0)
 
             .overlay(
@@ -76,11 +76,14 @@ struct Suggestions: View {
             )
                 .overlay(
                     VStack{
+                        ScrollView{
                         Text("Si les épices ont tant de vertus, encore faut-il bien s'en servir. Mais les épices sont-elles vraiment une clé pour se soigner ou sont-elles de simples compléments? Les réponses avec un chef passionné par les épices, et une nutritionniste spécialiste du sujet.")
-                            .font(.system(size:15)).foregroundColor(.gray).padding().padding(.bottom, -26.0)
+                            .font(.system(size:15)).foregroundColor(.black).padding().padding(.bottom, -26.0)
                         Text("Les épices, une richesse pour nos papilles et pour notre santé? Depuis l'Antiquité, l'homme traverse océans et continents en quête d'épices pour cuisiner mais aussi pour se soigner. Cette science a traversé les siècles et intéresse aujourd'hui les médecins comme les nutritionnistes. Le premier intérêt des épices est d'alléger les plats comme le confirme Nathalie Hutter-Lardeau, nutritionniste: Les épices vont permettre d'alléger en sucres, en gras, en sel mais pas d'alléger en goût. Il faut justement avoir une palette de goûts et des vertus santé")
-                        .font(.system(size:15)).foregroundColor(.gray).padding()
-                }
+                        .font(.system(size:15)).foregroundColor(.black).padding()
+                        }
+                        
+                    }
                 )
                     
                     
