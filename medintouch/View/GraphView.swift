@@ -16,7 +16,6 @@ struct GraphView: View {
             CapsuleView(value: 20, couleur: .green)
             CapsuleView(value: 90, couleur: .red)
         }
-        
     }
 }
 

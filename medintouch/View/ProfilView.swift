@@ -13,12 +13,14 @@ struct ProfilView: View {
     @State private var selectedGraph = 0
     
     var body: some View {
+        
        ZStack{
         Color(UIColor.systemGray6)
+        ScrollView{
             VStack{
                 RoundedRectangle(cornerRadius: 40)
-                    .frame(height:320)
-                    .foregroundColor(Color(UIColor.systemGray6))
+                    .frame(height:380)
+                    .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
                     .shadow(color: .white, radius: 7, x: -14, y: -8)
                     .shadow(color: .gray, radius: 10, x: 14, y: 8)
                     .overlay(
@@ -27,7 +29,7 @@ struct ProfilView: View {
                     ZStack{
                         Capsule(style: .continuous)
                             .frame(width: 80.0, height: 130.0)
-                            .foregroundColor(Color(UIColor.systemGray6))
+                            .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
                             .padding(.top, 75.0)
                         VStack{
                         Image("pexels-photo-614810").resizable()
@@ -50,8 +52,8 @@ struct ProfilView: View {
                     }.shadow(color: .white, radius: 3, x: -5, y: -5)
                     .shadow(color: .gray, radius: 3, x: 5, y: 5)
                     VStack(alignment: .leading){
-                        Text("Jerry Lagagne")
-                            .font(.title)
+                        Text("Jerry Gaulay")
+                            .font(.headline)
                         Text("Age: 30 ans")
                             .font(.headline)
                         Divider()
@@ -62,41 +64,45 @@ struct ProfilView: View {
                         Text("Objectifs: Régularité et Résultat")
                     }
                
-                }.padding(.top, -30)
+                }.padding()
                             Text("Traitements:")
-                                .padding()
+                                .padding([.leading, .bottom, .trailing])
                                
                             Text("Contre-indications:")
                                 .padding([.leading, .bottom, .trailing])
                     })
-                    .padding(.top, -29.0)
-                    .padding()
+                    .padding(.top, -35.0)
+                   
+                Button(action: {})
+                  {
+                      Capsule()
+                          .foregroundColor(Color(UIColor.systemGray6))
+                           .frame(width: 330.0, height: 50.0)
+                          .shadow(color: .white, radius: 3, x: -5, y: -5)
+                          .shadow(color: .gray, radius: 3, x: 5, y: 5)
+                          .overlay(Text("Effectuer le suivi quotidien").foregroundColor(.black))
+                  }.padding()
                 HStack{
-                Text("Suivi sur: le ginseng")
+                Text("Suivi")
                     .font(.title)
                     Spacer()
-                    Picker(selection: $selectedGraph)
+                    Picker("Graphique",selection: $selectedGraph)
                         {
                             Text("Jour").tag(0)
                             Text("Semaine").tag(1)
                             Text("Mois").tag(2)
-                        }
-                }.padding(.leading, 23.0)
-                GraphView()
+                    }.pickerStyle(SegmentedPickerStyle())
+                }
+                .frame(width: 320)
                 
-                Button(action: {})
-                {
-                    Capsule()
-                        .foregroundColor(Color(UIColor.systemGray6))
-                         .frame(width: 330.0, height: 50.0)
-                        .shadow(color: .white, radius: 3, x: -5, y: -5)
-                        .shadow(color: .gray, radius: 3, x: 5, y: 5)
-                        .overlay(Text("Effectuer le suivi").foregroundColor(.black))
-                       
-                    
-                }.padding()
-            
-            }.padding(.top)
+                ChartView()
+                ChartView()
+                ChartView()
+                ChartView()
+            }
+            .padding(.top, 20)
+            .padding(.bottom, 100.0)
+        }
        }.edgesIgnoringSafeArea(.all)
     }
 }
