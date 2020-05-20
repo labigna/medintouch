@@ -105,7 +105,13 @@ struct ChoiceView: View {
         
         
         
-        VStack{
+        
+            ZStack{
+                
+            Image("fond1").resizable()
+            .edgesIgnoringSafeArea(.all)
+                
+            VStack{
             Text("Questionnaire")
                 .font(.largeTitle)
             
@@ -118,7 +124,7 @@ struct ChoiceView: View {
     }
 }
 }
-
+}
 
 struct ChoiceView_Previews: PreviewProvider {
     static var previews: some View {

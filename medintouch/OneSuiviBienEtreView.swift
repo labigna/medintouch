@@ -29,7 +29,7 @@ struct OneSuiviBienEtreView: View {
             
             
             
-            NavigationLink( destination: ChoiceView(choix: self.choice))
+            NavigationLink( destination: SuiviBienEtre(choix: self.choice))
             { Image(self.image).renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fill)

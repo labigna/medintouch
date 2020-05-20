@@ -14,25 +14,31 @@ struct SuiviBienEtre2: View {
     var body: some View {
         
         NavigationView{
+            
+           ZStack{
+                
+            Image("fond1").resizable()
+            .edgesIgnoringSafeArea(.all)
+                
         VStack{
             
             Text("Catégories")
                 .font(.largeTitle)
             ScrollView{
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Peau", choix: 1)
-                OneSuiviBienEtreView(img: "fond1", titre: "Articulations", choix: 2)
+                OneSuiviBienEtreView(img: "peau", titre: "Peau", choix: 1)
+                OneSuiviBienEtreView(img: "articulation", titre: "Articulations", choix: 2)
         }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Fatigue", choix: 3)
-                OneSuiviBienEtreView(img: "fond1", titre: "Foie", choix: 4)
+                OneSuiviBienEtreView(img: "fatigue", titre: "Fatigue", choix: 3)
+                OneSuiviBienEtreView(img: "foie", titre: "Foie", choix: 4)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Digestion", choix: 5)
-                OneSuiviBienEtreView(img: "fond1", titre: "Sommeil", choix: 6)
+                OneSuiviBienEtreView(img: "digestion", titre: "Digestion", choix: 5)
+                OneSuiviBienEtreView(img: "sommeil", titre: "Sommeil", choix: 6)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Moral", choix: 7)
+                OneSuiviBienEtreView(img: "moral", titre: "Moral", choix: 7)
                 OneSuiviBienEtreView(img: "fond1", titre: "", choix: 8)
             }
             HStack{
@@ -41,6 +47,7 @@ struct SuiviBienEtre2: View {
             }
         }
     }
+            }
     }
 }
 }
