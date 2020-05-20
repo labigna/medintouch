@@ -70,20 +70,20 @@
 		71B2BA09246424F7003D84CE /* medintouch */ = {
 			isa = PBXGroup;
 			children = (
-				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
-				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
-				71B2BA0E246424F7003D84CE /* ContentView.swift */,
-				71B2BA10246424F8003D84CE /* Assets.xcassets */,
-				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
-				71B2BA18246424F8003D84CE /* Info.plist */,
-				71B2BA12246424F8003D84CE /* Preview Content */,
-				03C78C1D246AC2F300C8C34E /* categorie.swift */,
 				03C78C21246BEB6D00C8C34E /* actual.swift */,
+				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
+				71B2BA10246424F8003D84CE /* Assets.xcassets */,
+				03C78C1D246AC2F300C8C34E /* categorie.swift */,
+				71B2BA0E246424F7003D84CE /* ContentView.swift */,
 				03C78C27246C2A8300C8C34E /* creationProfil.swift */,
 				03C78C25246C1B6100C8C34E /* extension color.swift */,
+				71B2BA18246424F8003D84CE /* Info.plist */,
+				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				03C78C23246BEC8100C8C34E /* OneActualView.swift */,
 				03C78C1F246AEA8100C8C34E /* OneCategorieView.swift */,
 				03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */,
+				71B2BA12246424F8003D84CE /* Preview Content */,
+				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
 			);
 			path = medintouch;
 			sourceTree = "<group>";

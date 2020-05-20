@@ -19,43 +19,32 @@ struct OneQuestionView: View {
         self.title = titre
     }
     
-   
-        var body: some View {
-                                             VStack{
-            // Image catégorie
-                                                Image(self.image)
-                   
-                    .resizable()
-                    .frame(width: 150.0, height: 130.0)
-                    .overlay(
+    
+    var body: some View {
 
-                       VStack{
-                   
-                           RoundedRectangle(cornerRadius: 40)
-                                             .frame(width: 300.0, height:320)
-                                             .foregroundColor(Color(UIColor.systemGray6))
-                                             .shadow(color: .white, radius: 7, x: -14, y: -8)
-                                             .shadow(color: .gray, radius: 10, x: 14, y: 8)
-
-                   .overlay(
-
-                    Text(self.title)
-                           .font(.footnote)
-                           .fontWeight(.semibold)
-                        .foregroundColor(Color.black)
-                        .multilineTextAlignment(.center)
-
-                       )
-                       }
-                                                )
-            }
-            }
-            
+       
+              
+        RoundedRectangle(cornerRadius: 40)
+            .padding(.vertical, 5.0)
+            .padding(.horizontal, 17.0)
+            .frame(width: 300.0, height:350.0)
+                        .foregroundColor(Color(UIColor.systemGray6))
+                        .shadow(color: .white, radius: 6, x: -5, y: -5)
+                        .shadow(color: .gray, radius: 6, x: 5, y: 5)
                         
+                        .overlay(
+                            
+                            Text(self.title)
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color.black)
+                    )
+        
     }
+}
 
 struct OneQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        OneQuestionView(img: "medoc", titre: "complément")
+        OneQuestionView(img: "medoc", titre: "Question")
     }
 }
