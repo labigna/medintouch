@@ -9,31 +9,35 @@
 import SwiftUI
 
 struct SuiviBienEtre2: View {
+    
+    
     var body: some View {
-        ScrollView{
+        
+    
         VStack{
             
             Text("Catégories")
                 .font(.largeTitle)
+            ScrollView{
             HStack{
-            OneSuiviBienEtreView(img: "fond1", titre: "Peau")
-                OneSuiviBienEtreView(img: "fond1", titre: "Articulations")
+                OneSuiviBienEtreView(img: "fond1", titre: "Peau", choix: 1)
+                OneSuiviBienEtreView(img: "fond1", titre: "Articulations", choix: 2)
         }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Fatigue")
-                    OneSuiviBienEtreView(img: "fond1", titre: "Foie")
+                OneSuiviBienEtreView(img: "fond1", titre: "Fatigue", choix: 3)
+                OneSuiviBienEtreView(img: "fond1", titre: "Foie", choix: 4)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Digestion")
-                    OneSuiviBienEtreView(img: "fond1", titre: "Sommeil")
+                OneSuiviBienEtreView(img: "fond1", titre: "Digestion", choix: 5)
+                OneSuiviBienEtreView(img: "fond1", titre: "Sommeil", choix: 6)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "Moral")
-                    OneSuiviBienEtreView(img: "fond1", titre: "")
+                OneSuiviBienEtreView(img: "fond1", titre: "Moral", choix: 7)
+                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 8)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "")
-                    OneSuiviBienEtreView(img: "fond1", titre: "")
+                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 9)
+                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 10)
             }
         }
     }

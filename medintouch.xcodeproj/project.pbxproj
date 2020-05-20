@@ -16,6 +16,7 @@
 		B8E6810B24741A7E0096EBA0 /* SuiviBienEtre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E6810A24741A7E0096EBA0 /* SuiviBienEtre.swift */; };
 		B8E6810D24741E290096EBA0 /* SuiviBienEtre2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E6810C24741E290096EBA0 /* SuiviBienEtre2.swift */; };
 		B8E6810F24741EE30096EBA0 /* OneSuiviBienEtreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E6810E24741EE30096EBA0 /* OneSuiviBienEtreView.swift */; };
+		B8E681112475171D0096EBA0 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E681102475171D0096EBA0 /* ChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B8E6810A24741A7E0096EBA0 /* SuiviBienEtre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre.swift; sourceTree = "<group>"; };
 		B8E6810C24741E290096EBA0 /* SuiviBienEtre2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre2.swift; sourceTree = "<group>"; };
 		B8E6810E24741EE30096EBA0 /* OneSuiviBienEtreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSuiviBienEtreView.swift; sourceTree = "<group>"; };
+		B8E681102475171D0096EBA0 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		71B2BA09246424F7003D84CE /* medintouch */ = {
 			isa = PBXGroup;
 			children = (
+				B8E681102475171D0096EBA0 /* ChoiceView.swift */,
 				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
 				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
@@ -158,6 +161,7 @@
 				B8E6810D24741E290096EBA0 /* SuiviBienEtre2.swift in Sources */,
 				B8E6810B24741A7E0096EBA0 /* SuiviBienEtre.swift in Sources */,
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
+				B8E681112475171D0096EBA0 /* ChoiceView.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				B8E6810F24741EE30096EBA0 /* OneSuiviBienEtreView.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,

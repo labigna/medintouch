@@ -10,22 +10,27 @@ import SwiftUI
 
 
         struct OneSuiviBienEtreView: View {
-            var image: String = ""
-            var title: String = ""
+            private var image: String = "fond1"
+            private var title: String = ""
+            private var choice: Int
 
 
-            init(img : String, titre : String) {
+            init(img : String, titre : String, choix: Int) {
                 self.image = img
                 self.title = titre
+                self.choice = choix
             }
 
             var body: some View {
                                                  HStack{
                 // Image catégorie
-                                                    Image(self.image)
+                        Button(action:{},
+                                label: {
+                            
+                                    Image(self.image).renderingMode(.original)
                        .resizable()
                        .aspectRatio(contentMode: .fill)
-                       .frame(width: 150.0, height: 130.0)
+                       .frame(width: 150.0, height: 110.0)
                        .mask(RoundedRectangle(cornerRadius: 20))
                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
                        .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
@@ -48,6 +53,9 @@ import SwiftUI
                            )
                            }
                                                     )
+                                                    }
+                                                    )
+                                                    
                 }
                 }
 
@@ -57,6 +65,6 @@ import SwiftUI
 
 struct OneSuiviBienEtreView_Previews: PreviewProvider {
     static var previews: some View {
-        OneSuiviBienEtreView(img: "medoc", titre: "complément")
+        OneSuiviBienEtreView(img: "medoc", titre: "complément", choix: 1)
     }
 }
