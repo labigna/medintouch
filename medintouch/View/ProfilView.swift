@@ -11,6 +11,20 @@ import SwiftUI
 struct ProfilView: View {
     
     @State private var selectedGraph = 0
+    var suivis : [Suivi] = []
+    var choixSuivi1 : Int = 1
+    var choixSuivi2 : Int = 2
+    var choixSuivi3 : Int = 3
+    
+    init(){
+        self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Hépiderme"))
+        self.suivis.append(Suivi(donnees: [1,2,3,4,5], titleSuivi: "Articulation"))
+        self.suivis.append(Suivi(donnees: [5,1,4], titleSuivi: "Système digestif"))
+        self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Moral"))
+        self.suivis.append(Suivi(donnees: [2,4,5,2], titleSuivi: "Physique"))
+    }
+    
+    
     
     var body: some View {
         
@@ -88,17 +102,15 @@ struct ProfilView: View {
                     Spacer()
                     Picker("Graphique",selection: $selectedGraph)
                         {
-                            Text("Jour").tag(0)
-                            Text("Semaine").tag(1)
-                            Text("Mois").tag(2)
+                            Text("Semaine").tag(0)
+                            Text("Mois").tag(1)
                     }.pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 150)
                 }
                 .frame(width: 320)
                 
-                ChartView()
-                ChartView()
-                ChartView()
-                ChartView()
+                ChartView(graphique1: suivis[choixSuivi1], graphique2: suivis[choixSuivi2], graphique3: suivis[choixSuivi3])
+
             }
             .padding(.top, 20)
             .padding(.bottom, 100.0)

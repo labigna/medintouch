@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7132B46F246C133C00B9C9EA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7132B46E246C133C00B9C9EA /* SwiftUICharts */; };
 		7132B471246C267900B9C9EA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132B470246C267900B9C9EA /* ChartView.swift */; };
+		713D9FDF24756C5E00EA7C1C /* ChartViewMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D9FDE24756C5E00EA7C1C /* ChartViewMonth.swift */; };
 		715D3A0E2469496D002BEE91 /* ProfilM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A0D2469496D002BEE91 /* ProfilM.swift */; };
 		715D3A1024697595002BEE91 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A0F24697595002BEE91 /* ProfilView.swift */; };
 		715D3A12246A8F68002BEE91 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D3A11246A8F68002BEE91 /* GraphView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		7132B470246C267900B9C9EA /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		713D9FDE24756C5E00EA7C1C /* ChartViewMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewMonth.swift; sourceTree = "<group>"; };
 		715D3A0D2469496D002BEE91 /* ProfilM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilM.swift; sourceTree = "<group>"; };
 		715D3A0F24697595002BEE91 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		715D3A11246A8F68002BEE91 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				715D3A0F24697595002BEE91 /* ProfilView.swift */,
 				715D3A11246A8F68002BEE91 /* GraphView.swift */,
 				7132B470246C267900B9C9EA /* ChartView.swift */,
+				713D9FDE24756C5E00EA7C1C /* ChartViewMonth.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				715D3A1024697595002BEE91 /* ProfilView.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				7132B471246C267900B9C9EA /* ChartView.swift in Sources */,
+				713D9FDF24756C5E00EA7C1C /* ChartViewMonth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

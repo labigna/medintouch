@@ -17,3 +17,8 @@ struct ProfilM{
     var contreInd : [String]
     var traitements : [String]
 }
+
+struct Suivi{
+    var donnees : [Double]
+    var titleSuivi : String
+}
