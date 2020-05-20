@@ -10,18 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
   
-        @State private var compteur = 0
-        
         var body: some View {
-        VStack{
-            Text("\(compteur)")
-                .font(.system(size:90))
-                .fontWeight(.bold)
-                .onTapGesture {
-                    self.compteur += 1
-            }
-                    
-    }
+       Text("Hello World")
 }
 }
 struct ContentView_Previews: PreviewProvider {
