@@ -34,9 +34,9 @@ struct ChoiceView: View {
             
         case 1:
             self.question1 = "Avez-vous la peau grasse?"
-            self.question2 = "2"
-            self.question3 = "3"
-            self.question4 = "4"
+            self.question2 = "Problème d'acné?"
+            self.question3 = "Psoriasis"
+            self.question4 = "Coups de soleil"
             
         case 2:
             self.question1 = "5"

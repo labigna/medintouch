@@ -13,7 +13,7 @@ struct SuiviBienEtre2: View {
     
     var body: some View {
         
-    
+        NavigationView{
         VStack{
             
             Text("Catégories")
@@ -42,6 +42,7 @@ struct SuiviBienEtre2: View {
         }
     }
     }
+}
 }
 
 struct SuiviBienEtre2_Previews: PreviewProvider {

@@ -9,6 +9,30 @@
 import SwiftUI
 
 struct SuiviBienEtre: View {
+    
+    private var question1: String
+    private var question2: String
+    private var question3: String
+    private var question4: String
+    
+    init(choix: Int){
+        
+        switch choix {
+            
+        case 1:
+            self.question1 = "Avez-vous la peau grasse?"
+            self.question2 = "Problème d'acné?"
+            self.question3 = "Psoriasis"
+            self.question4 = "Coups de soleil"
+            
+            default:
+            self.question1 = ""
+            self.question2 = ""
+            self.question3 = ""
+            self.question4 = ""
+                
+        }
+    }
     var body: some View {
         NavigationView{
                
@@ -36,7 +60,7 @@ struct SuiviBienEtre: View {
                                                                       )
                                                           }
                                        Spacer()
-                       Text("Suivi Bien-être").font(.title).bold()
+                       Text("Questionnaire").font(.title).bold()
                                         
                                        Spacer()
                     
@@ -44,42 +68,30 @@ struct SuiviBienEtre: View {
                 
                     VStack{
                         
-                        Text("Bienvenue sur Med'in'Touch !")
-                            .font(.headline)
                         
-                        Spacer()
                         
                         ZStack{
                         RoundedRectangle(cornerRadius: 40)
-                            .frame(width: 306.0, height:320)
+                            .frame(width: 306.0, height:550)
                             .foregroundColor(Color(UIColor.systemGray6))
                             .shadow(color: .white, radius: 7, x: -5, y: -5)
                             .shadow(color: .gray, radius: 7, x: 5, y: 5)
                         .padding(.vertical, 15.0)
                       
                             .overlay(
-                                Text("Veuillez choisir un avatar : ")
-                                    .font(.callout)
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.center)
-                               
+                                
+                                VStack{
+                                Text(question1)
+                                Text(question2)
+                                Text(question3)
+                                Text(question4)
+                                
+                                }
                             )
                         }
                     
                         
-                        RoundedRectangle(cornerRadius: 40)
-                              .frame(width: 306.0, height:320)
-                              .foregroundColor(Color(UIColor.systemGray6))
-                              .shadow(color: .white, radius: 7, x: -5, y: -5)
-                              .shadow(color: .gray, radius: 7, x: 5, y: 5)
-                          .padding(.vertical, 15.0)
                         
-                              .overlay(
-                                  Text("Veuillez choisir un avatar : ")
-                                      .font(.callout)
-                                      .fontWeight(.medium)
-                                      .multilineTextAlignment(.center)
-                        )
                     }
                     }
                 }
@@ -92,6 +104,6 @@ struct SuiviBienEtre: View {
 
 struct SuiviBienEtre_Previews: PreviewProvider {
     static var previews: some View {
-        SuiviBienEtre()
+        SuiviBienEtre(choix: 1)
     }
 }
