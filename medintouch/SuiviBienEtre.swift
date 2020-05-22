@@ -57,11 +57,11 @@ struct SuiviBienEtre: View {
             self.question1 = "Brûlures d'estomac?"
             self.question2 = "Avez-vous des nausées?"
             self.question3 = "Ballonnements?"
-            self.question4 = "8"
+            self.question4 = "Troubles du transit?"
             
         case 6:       /* sommeil reseau-morphee.fr/wp-content/uploads/dlm_uploads/2016/04/questionnairesommeilJANV2017.pdf */
             self.titre1 = "Comment dormez-vous?"
-            self.question1 = "Difficultés à vous endormir?"
+            self.question1 = "Difficultés à vous endormir le soir?"
             self.question2 = "Réveils dans la nuit?"
             self.question3 = "Horaires de sommeils décalés?"
             self.question4 = "Ronflements?"
@@ -74,12 +74,12 @@ struct SuiviBienEtre: View {
             self.question3 = "Difficultés relationnelles?"
             self.question4 = "Soucis psychologiques?"
             
-        case 8:
-            self.titre1 = "cas 8"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+        case 8:       // soucis endocriniens
+            self.titre1 = "Soucis endocriniens?"
+            self.question1 = "Thyroïde"
+            self.question2 = "Diabète"
+            self.question3 = "Cholestérol"
+            self.question4 = "Triglycérides"
             
         case 9:
             self.titre1 = "cas 9"
@@ -217,6 +217,6 @@ struct SuiviBienEtre: View {
 
 struct SuiviBienEtre_Previews: PreviewProvider {
     static var previews: some View {
-        SuiviBienEtre(choix: 6)
+        SuiviBienEtre(choix: 8)
     }
 }
