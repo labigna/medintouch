@@ -23,6 +23,7 @@
 		71B2BA11246424F8003D84CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA10246424F8003D84CE /* Assets.xcassets */; };
 		71B2BA14246424F8003D84CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA13246424F8003D84CE /* Preview Assets.xcassets */; };
 		71B2BA17246424F8003D84CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */; };
+		71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAA3E62478048800585B01 /* ArticlesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		71B2BA13246424F8003D84CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71B2BA16246424F8003D84CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71B2BA18246424F8003D84CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CAA3E62478048800585B01 /* ArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
 				03C78C1D246AC2F300C8C34E /* categorie.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
+				71CAA3E62478048800585B01 /* ArticlesView.swift */,
 				7189A27C2477F4C00056F6F5 /* PharmaView.swift */,
 				03C78C27246C2A8300C8C34E /* creationProfil.swift */,
 				71A11F002477F202001B5380 /* ContactDocView.swift */,
@@ -185,6 +188,7 @@
 				03C78C1E246AC2F300C8C34E /* categorie.swift in Sources */,
 				03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
+				71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */,
 				71A11F012477F202001B5380 /* ContactDocView.swift in Sources */,
 				03C78C20246AEA8100C8C34E /* OneCategorieView.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
