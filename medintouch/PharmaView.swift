@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PharmaView.swift
 //  medintouch
 //
 //  Created by Labigna Traoré on 07/05/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PharmaView: View {
     var body: some View {
                ZStack{
                                  Image("fond1")
@@ -113,9 +113,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PharmaView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PharmaView()
     }
 }
 

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
-		71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0E246424F7003D84CE /* ContentView.swift */; };
+		71B2BA0F246424F7003D84CE /* PharmaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0E246424F7003D84CE /* PharmaView.swift */; };
 		71B2BA11246424F8003D84CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA10246424F8003D84CE /* Assets.xcassets */; };
 		71B2BA14246424F8003D84CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA13246424F8003D84CE /* Preview Assets.xcassets */; };
 		71B2BA17246424F8003D84CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B2BA0C246424F7003D84CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71B2BA0E246424F7003D84CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71B2BA0E246424F7003D84CE /* PharmaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaView.swift; sourceTree = "<group>"; };
 		71B2BA10246424F8003D84CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71B2BA13246424F8003D84CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71B2BA16246424F8003D84CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
 				71B2BA0C246424F7003D84CE /* SceneDelegate.swift */,
-				71B2BA0E246424F7003D84CE /* ContentView.swift */,
+				71B2BA0E246424F7003D84CE /* PharmaView.swift */,
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
@@ -148,7 +148,7 @@
 			files = (
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
-				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
+				71B2BA0F246424F7003D84CE /* PharmaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
