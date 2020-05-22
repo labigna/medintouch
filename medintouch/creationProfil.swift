@@ -41,31 +41,60 @@ struct creationProfil: View {
                     Spacer()
                 }
                 
-                Text("Bienvenue sur Med'in'Touch !").font(.headline)
+             
+                
+                Text("Bienvenue sur Med'in'Touch !").font(.headline).padding(.vertical, 30.0)
+                
+           
                 
                 ScrollView{
                    
                     ZStack{
-                    OneQuestionView(img: "medoc", titre: "quoi")
-                        VStack{
-                            Text("hello")
-                            Text("hello")
-                            Text("hello")
+                    OneQuestionView(img: "medoc", titre: "Veuillez sélectionner un avatar : ")
+                       Button(action: {}) { Image("icon").resizable()
+                            .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.black)
                     }
                     }
                     
-                    ZStack{
-                    OneQuestionView(img: "medoc", titre: "Veuillez préciser votre :")
-                        VStack{
-                            Text("Pseudo (à voir)")
-                            Text("âge")
-                            Text("taille")
-                            Text("poids")
+                    ZStack(alignment: .leading){
+                        OneQuestionView(img: "medoc", titre: "Merci de nous indiquer votre :")
+                           
+                        
+                        VStack(alignment: .leading){
+                           
+                            Text("Âge :")
+                                .font(.callout)
+                                .padding(.vertical, 15.0)
+                            Text("Taille :")
+                                .font(.callout)
+                                .padding(.vertical, 15.0)
+                            Text("Poids :")
+                                .font(.callout)
+                                .padding(.vertical, 15.0)
+                                
                         }
+                        .padding(.leading, 50.0)
                         }
-                    OneQuestionView(img: "medoc", titre: "Veuillez préciser votre :")
-                    OneQuestionView(img: "medoc", titre: "Veuillez préciser votre :")
+                    OneQuestionView(img: "medoc", titre: "Avez-vous des prédispositions ?")
+                  
+                
                     
+                    Button(action: {}) {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 140.0, height: 40.0)
+                                                   .foregroundColor(.white)
+                                                   .shadow(color: Color.white, radius: 5, x: -5, y: -5)
+                                                   .shadow(color: Color.black.opacity(0.2), radius: 5, x: 5, y: 5)
+                                                   
+                                                   .overlay(
+                                                       Text("Confirmer")
+                                                        .fontWeight(.light)
+                                                           .foregroundColor(.black)
+                                                        .font(.callout)
+                                                        )
+                    }
+                    .padding(.top)
                 }
                 
             }

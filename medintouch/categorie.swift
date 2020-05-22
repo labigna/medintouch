@@ -36,7 +36,7 @@ struct categorie: View {
                         Spacer()
                         ZStack{
                             
-                            //Navigation bar
+        //Navigation bar
                             Circle()
                                 .frame(width: 30.0, height: 30.0)
                                 .foregroundColor(.white)
