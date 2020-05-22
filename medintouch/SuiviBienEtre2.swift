@@ -46,9 +46,12 @@ struct SuiviBienEtre2: View {
                 OneSuiviBienEtreView(img: "fond1", titre: "", choix: 10)
             }
         }
-    }
+        
+        }.padding(.top, -60.0)
+            
             }
-    }
+        }
+        
 }
 }
 
