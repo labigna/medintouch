@@ -39,11 +39,11 @@ struct SuiviBienEtre2: View {
             }
             HStack{
                 OneSuiviBienEtreView(img: "moral", titre: "Moral", choix: 7)
-                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 8)
+                OneSuiviBienEtreView(img: "cholesterol", titre: "Soucis endocriniens", choix: 8)
             }
             HStack{
-                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 9)
-                OneSuiviBienEtreView(img: "fond1", titre: "", choix: 10)
+                OneSuiviBienEtreView(img: "urinaire", titre: "Soucis urinaires", choix: 9)
+                OneSuiviBienEtreView(img: "cheveux", titre: "Problèmes de cheveux", choix: 10)
             }
         //}
         

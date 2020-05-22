@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+/* www.passeportsante.net/fr/communaute/reponsesexpert/index.aspx */
+
 struct SuiviBienEtre: View {
     
     private var titre1: String
@@ -75,25 +77,28 @@ struct SuiviBienEtre: View {
             self.question4 = "Soucis psychologiques?"
             
         case 8:       // soucis endocriniens
+            /* www.irdes.fr/recherche/enquetes/esps-enquete-sur-la-sante-et-la-protection-sociale/questionnaires/2004/sante-soins-medicaux.pdf */
             self.titre1 = "Soucis endocriniens?"
             self.question1 = "Thyroïde"
             self.question2 = "Diabète"
             self.question3 = "Cholestérol"
             self.question4 = "Triglycérides"
             
-        case 9:
-            self.titre1 = "cas 9"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+        case 9:       // soucis urinaires
+            /* www.irdes.fr/recherche/enquetes/esps-enquete-sur-la-sante-et-la-protection-sociale/questionnaires/2004/sante-soins-medicaux.pdf */
+            self.titre1 = "Soucis urinaires"
+            self.question1 = "Cystite"
+            self.question2 = "troubles des règles"
+            self.question3 = "Ménopause"
+            self.question4 = "Prostate"
             
-        case 10:
-            self.titre1 = "cas 10"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+        case 10:    //Problèmes de cheveux
+        /* www.topsante.com/Landing-Pages/problemes-de-cheveux-tout-savoir */
+            self.titre1 = "Problèmes de cheveux"
+            self.question1 = "Pointes fourchues"
+            self.question2 = "Pellicules"
+            self.question3 = "Chutes de cheveux"
+            self.question4 = "Cheveux secs"
             
             
         default:
