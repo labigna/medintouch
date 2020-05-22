@@ -15,6 +15,7 @@
 		03C78C28246C2A8300C8C34E /* creationProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C27246C2A8300C8C34E /* creationProfil.swift */; };
 		03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */; };
 		714502A52477F0AA00CAFA2E /* LeSaviezVousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714502A42477F0AA00CAFA2E /* LeSaviezVousView.swift */; };
+		7189A27D2477F4C00056F6F5 /* PharmaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189A27C2477F4C00056F6F5 /* PharmaView.swift */; };
 		71A11F012477F202001B5380 /* ContactDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A11F002477F202001B5380 /* ContactDocView.swift */; };
 		71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0A246424F7003D84CE /* AppDelegate.swift */; };
 		71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2BA0C246424F7003D84CE /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 		03C78C27246C2A8300C8C34E /* creationProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creationProfil.swift; sourceTree = "<group>"; };
 		03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneQuestionView.swift; sourceTree = "<group>"; };
 		714502A42477F0AA00CAFA2E /* LeSaviezVousView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeSaviezVousView.swift; sourceTree = "<group>"; };
+		7189A27C2477F4C00056F6F5 /* PharmaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaView.swift; sourceTree = "<group>"; };
 		71A11F002477F202001B5380 /* ContactDocView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDocView.swift; sourceTree = "<group>"; };
 		71B2BA07246424F7003D84CE /* medintouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medintouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B2BA0A246424F7003D84CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
 				03C78C1D246AC2F300C8C34E /* categorie.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
+				7189A27C2477F4C00056F6F5 /* PharmaView.swift */,
 				03C78C27246C2A8300C8C34E /* creationProfil.swift */,
 				71A11F002477F202001B5380 /* ContactDocView.swift */,
 				03C78C25246C1B6100C8C34E /* extension color.swift */,
@@ -175,6 +178,7 @@
 			files = (
 				03C78C26246C1B6100C8C34E /* extension color.swift in Sources */,
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
+				7189A27D2477F4C00056F6F5 /* PharmaView.swift in Sources */,
 				714502A52477F0AA00CAFA2E /* LeSaviezVousView.swift in Sources */,
 				03C78C24246BEC8100C8C34E /* OneActualView.swift in Sources */,
 				03C78C22246BEB6D00C8C34E /* actual.swift in Sources */,
