@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LeSaviezVousView.swift
 //  medintouch
 //
 //  Created by Labigna Traoré on 07/05/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LeSaviezVousView: View {
     
     var body: some View {
         ZStack{
@@ -85,6 +85,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LeSaviezVousView()
     }
 }
