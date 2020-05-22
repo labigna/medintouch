@@ -32,7 +32,7 @@ struct SuiviBienEtre: View {
             self.question4 = "Coups de soleil"
             
         case 2:       // articulations
-            self.titre1 = "Problèmes d'articulations'"
+            self.titre1 = "Soucis d'articulations"
             self.question1 = "Douleurs aux genoux"
             self.question2 = "Douleurs aux épaules"
             self.question3 = "Douleurs aux mains"
@@ -40,38 +40,39 @@ struct SuiviBienEtre: View {
             
         case 3:       // fatigue
             self.titre1 = "Etes-vous fatigué(e)?"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+            self.question1 = "Fatigué(e) au réveil?"
+            self.question2 = "Efforts physiques difficiles?"
+            self.question3 = "Manque de peps?"
+            self.question4 = "Difficulté de concentration?"
             
         case 4:       // foie
             self.titre1 = "Comment va votre foie?"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+            self.question1 = "Manquez-vous d'énergie?"
+            self.question2 = "Avez-vous la peau qui gratte?"
+            self.question3 = "Avez-vous des trous de mémoire?"
+            self.question4 = "Perte de poids rapide?"
             
         case 5:      // digestion
             self.titre1 = "Votre digestion?"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
+            self.question1 = "Brûlures d'estomac?"
+            self.question2 = "Avez-vous des nausées?"
+            self.question3 = "Ballonnements?"
             self.question4 = "8"
             
-        case 6:       // sommeil
+        case 6:       /* sommeil reseau-morphee.fr/wp-content/uploads/dlm_uploads/2016/04/questionnairesommeilJANV2017.pdf */
             self.titre1 = "Comment dormez-vous?"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+            self.question1 = "Difficultés à vous endormir?"
+            self.question2 = "Réveils dans la nuit?"
+            self.question3 = "Horaires de sommeils décalés?"
+            self.question4 = "Ronflements?"
             
-        case 7:       // moral
+        case 7:       /* moral
+            www.havea.com/conseils-sante/les-facteurs-de-troubles-de-l-humeur-et-baisses-de-moral*/
             self.titre1 = "Votre moral?"
-            self.question1 = "5"
-            self.question2 = "6"
-            self.question3 = "7"
-            self.question4 = "8"
+            self.question1 = "Troubles du sommeil?"
+            self.question2 = "Avez-vous une activité physique?"
+            self.question3 = "Difficultés relationnelles?"
+            self.question4 = "Soucis psychologiques?"
             
         case 8:
             self.titre1 = "cas 8"
@@ -137,7 +138,7 @@ struct SuiviBienEtre: View {
                     VStack{
                         ZStack{
                             RoundedRectangle(cornerRadius: 40)
-                                .frame(width: 306.0, height:400)
+                                .frame(width: 310.0, height:400)
                                 .foregroundColor(Color(UIColor.systemGray6))
                                 .shadow(color: .white, radius: 7, x: -5, y: -5)
                                 .shadow(color: .gray, radius: 7, x: 5, y: 5)
@@ -147,7 +148,7 @@ struct SuiviBienEtre: View {
                                     
                                     VStack{             // liste de questions
                                         Text(titre1
-                                        ).padding(.bottom, 36.0).font(.system(size: 26))
+                                        ).padding(.top, 10.0).padding(.bottom, 10.0).font(.system(size: 26))
                                         
                                         HStack{
                                             Text(question1).padding(.leading)
@@ -173,7 +174,7 @@ struct SuiviBienEtre: View {
                                                 {
                                                     EmptyView()
                                             }).padding(.trailing)
-                                        }.padding(.bottom, 10.0)
+                                            }.padding(.bottom, 10.0)
                                         HStack{
                                             Text(question4).padding(.leading)
                                             Toggle(isOn:
@@ -181,10 +182,8 @@ struct SuiviBienEtre: View {
                                                 {
                                                     EmptyView()
                                             }).padding(.trailing)
-                                        }.padding(.bottom, 10.0)
-                                        
-                                        
-                                    }
+                                            }.padding(.bottom, 10.0)
+                                            }
                                     .padding(.top, -66.0)
                                     
                             )
@@ -196,7 +195,7 @@ struct SuiviBienEtre: View {
                                 ZStack{
                                     
                                     RoundedRectangle(cornerRadius: 40)
-                                        .frame(width: 306.0, height:50)
+                                        .frame(width: 310.0, height:50)
                                         .foregroundColor(Color(UIColor.systemGray6))
                                         .shadow(color: .white, radius: 7, x: -5, y: -5)
                                         .shadow(color: .gray, radius: 7, x: 5, y: 5)
@@ -218,6 +217,6 @@ struct SuiviBienEtre: View {
 
 struct SuiviBienEtre_Previews: PreviewProvider {
     static var previews: some View {
-        SuiviBienEtre(choix: 1)
+        SuiviBienEtre(choix: 6)
     }
 }

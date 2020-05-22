@@ -24,7 +24,7 @@ struct SuiviBienEtre2: View {
             
             Text("Catégories")
                 .font(.largeTitle)
-            ScrollView{
+            //ScrollView{
             HStack{
                 OneSuiviBienEtreView(img: "peau", titre: "Peau", choix: 1)
                 OneSuiviBienEtreView(img: "articulation", titre: "Articulations", choix: 2)
@@ -45,7 +45,7 @@ struct SuiviBienEtre2: View {
                 OneSuiviBienEtreView(img: "fond1", titre: "", choix: 9)
                 OneSuiviBienEtreView(img: "fond1", titre: "", choix: 10)
             }
-        }
+        //}
         
         }.padding(.top, -60.0)
             
