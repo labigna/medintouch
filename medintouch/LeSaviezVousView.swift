@@ -19,13 +19,10 @@ struct LeSaviezVousView: View {
             Circle()
                                    .frame(width: 30.0, height: 30.0)
                                    .foregroundColor(.white)
-                                   .overlay(Button(action: {},
-                                                   label:
-                                       {Text("< ").foregroundColor(.gray)
+                                   .overlay(
+                                       Text("< ").foregroundColor(.gray)
                                            .padding(.leading, 2.0)
-                                           
-                                   }
-                                   ))
+                                   )
                                    .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
         }
     }

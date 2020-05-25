@@ -46,7 +46,6 @@ struct OneActualView: View {
                                     .font(.body)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color.white)
-                                
                         )
                     }
             )

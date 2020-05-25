@@ -41,12 +41,8 @@ struct creationProfil: View {
                     Spacer()
                 }
                 
-             
-                
                 Text("Bienvenue sur Med'in'Touch !").font(.headline).padding(.vertical, 30.0)
-                
-           
-                
+     
                 ScrollView{
                    
                     ZStack{

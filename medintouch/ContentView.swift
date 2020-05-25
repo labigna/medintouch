@@ -9,32 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
-  
-        var body: some View {
-     TabView {
-           actual()
-               .tabItem {
-                   Image(systemName: "1.square.fill")
-                   Text("Actualités")
-               }
-           categorie()
-               .tabItem {
-                   Image(systemName: "magnifyingglass")
-                   Text("Recherche")
-               }
-           Text("Carte")
-               .tabItem {
-                   Image(systemName: "map")
-                   Text("Carte")
-               }
-        ProfilView()
-        .tabItem {
-            Image(systemName: "person")
-            Text("Profil")
+    
+    var body: some View {
+        TabView {
+            actual()
+                .tabItem {
+                    Image(systemName: "leaf.arrow.circlepath")
+                    Text("Actualités")
+            }
+            categorie()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Recherche")
+            }
+            Text("Carte")
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Carte")
+            }
+            ProfilView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profil")
+            }
         }
-       }
-       .font(.headline)
-}
+        .font(.headline)
+    }
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

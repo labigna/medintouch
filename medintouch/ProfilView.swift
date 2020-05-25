@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ProfilView: View {
     
+    @State private var showingSheet = false
     @State private var selectedGraph = 0
     var suivis : [Suivi] = []
     var choixSuivi1 : Int = 1
@@ -35,8 +36,7 @@ struct ProfilView: View {
                 RoundedRectangle(cornerRadius: 40)
                     .frame(height:380)
                     .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
-                    .shadow(color: .white, radius: 7, x: -14, y: -8)
-                    .shadow(color: .gray, radius: 10, x: 14, y: 8)
+                    .shadow(color: Color(UIColor.systemGray4), radius: 5, x: 14, y: 8)
                     .overlay(
                         VStack(alignment: .leading){
                 HStack{
@@ -54,7 +54,7 @@ struct ProfilView: View {
                                 Circle()
                                 .stroke()
                                 .foregroundColor(.white))
-                            Button(action: {}){
+                            Button(action: {self.showingSheet = true}){
                                 Image(systemName: "gear")
                                 .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -87,13 +87,15 @@ struct ProfilView: View {
                     })
                     .padding(.top, -35.0)
                    
-                Button(action: {})
+                Button(action: {
+                    
+                })
                   {
                       Capsule()
                           .foregroundColor(Color(UIColor.systemGray6))
                            .frame(width: 330.0, height: 50.0)
                           .shadow(color: .white, radius: 3, x: -5, y: -5)
-                          .shadow(color: .gray, radius: 3, x: 5, y: 5)
+                          .shadow(color: Color(UIColor.systemGray4), radius: 3, x: 5, y: 5)
                           .overlay(Text("Effectuer le suivi quotidien").foregroundColor(.black))
                   }.padding()
                 HStack{
@@ -116,6 +118,9 @@ struct ProfilView: View {
             .padding(.bottom, 100.0)
         }
        }.edgesIgnoringSafeArea(.all)
+        .actionSheet(isPresented: $showingSheet) {
+            ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion").foregroundColor(.red)),  .cancel(Text("Fermer")) ])
+        }
     }
 }
 

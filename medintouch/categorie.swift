@@ -27,7 +27,6 @@ struct categorie: View {
                 Image("fond vert")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
-                
                 VStack{
                     HStack{
                        Spacer()
