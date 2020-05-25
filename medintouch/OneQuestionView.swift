@@ -27,7 +27,7 @@ struct OneQuestionView: View {
         RoundedRectangle(cornerRadius: 40)
             .padding(.vertical, 5.0)
             .padding(.horizontal, 17.0)
-            .frame(width: 300.0, height:350.0)
+            .frame(width: 300.0, height:320.0)
                         .foregroundColor(Color(UIColor.systemGray6))
                         .shadow(color: .white, radius: 6, x: -5, y: -5)
                         .shadow(color: .gray, radius: 6, x: 5, y: 5)
@@ -35,9 +35,12 @@ struct OneQuestionView: View {
                         .overlay(
                             
                             Text(self.title)
-                                .font(.footnote)
+                                .font(.callout)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.black)
+                                .padding(.bottom, 230.0)
+                              
+                            
                     )
         
     }
