@@ -222,6 +222,6 @@ struct SuiviBienEtre: View {
 
 struct SuiviBienEtre_Previews: PreviewProvider {
     static var previews: some View {
-        SuiviBienEtre(choix: 8)
+        SuiviBienEtre(choix: 1)
     }
 }
