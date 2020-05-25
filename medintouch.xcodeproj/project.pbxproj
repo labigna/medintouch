@@ -14,6 +14,9 @@
 		03C78C26246C1B6100C8C34E /* extension color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C25246C1B6100C8C34E /* extension color.swift */; };
 		03C78C28246C2A8300C8C34E /* creationProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C27246C2A8300C8C34E /* creationProfil.swift */; };
 		03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */; };
+		712EA912247C13E6009AF248 /* SuiviBienEtre2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA90F247C13E6009AF248 /* SuiviBienEtre2.swift */; };
+		712EA913247C13E6009AF248 /* OneSuiviBienEtreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */; };
+		712EA914247C13E6009AF248 /* SuiviBienEtre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA911247C13E6009AF248 /* SuiviBienEtre.swift */; };
 		714502A52477F0AA00CAFA2E /* LeSaviezVousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714502A42477F0AA00CAFA2E /* LeSaviezVousView.swift */; };
 		7189A27D2477F4C00056F6F5 /* PharmaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189A27C2477F4C00056F6F5 /* PharmaView.swift */; };
 		71A11F012477F202001B5380 /* ContactDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A11F002477F202001B5380 /* ContactDocView.swift */; };
@@ -42,6 +45,9 @@
 		03C78C25246C1B6100C8C34E /* extension color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension color.swift"; sourceTree = "<group>"; };
 		03C78C27246C2A8300C8C34E /* creationProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creationProfil.swift; sourceTree = "<group>"; };
 		03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneQuestionView.swift; sourceTree = "<group>"; };
+		712EA90F247C13E6009AF248 /* SuiviBienEtre2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre2.swift; sourceTree = "<group>"; };
+		712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSuiviBienEtreView.swift; sourceTree = "<group>"; };
+		712EA911247C13E6009AF248 /* SuiviBienEtre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre.swift; sourceTree = "<group>"; };
 		714502A42477F0AA00CAFA2E /* LeSaviezVousView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeSaviezVousView.swift; sourceTree = "<group>"; };
 		7189A27C2477F4C00056F6F5 /* PharmaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaView.swift; sourceTree = "<group>"; };
 		71A11F002477F202001B5380 /* ContactDocView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDocView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				71B7ABFF247806F500E87789 /* Suggestions.swift */,
 				71A11F002477F202001B5380 /* ContactDocView.swift */,
 				71AFDF58247BB661009C25E6 /* ProfilM.swift */,
+				712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */,
+				712EA911247C13E6009AF248 /* SuiviBienEtre.swift */,
+				712EA90F247C13E6009AF248 /* SuiviBienEtre2.swift */,
 				71AFDF5C247BB6AA009C25E6 /* GraphView.swift */,
 				71AFDF5E247BB6BF009C25E6 /* ChartViewMonth.swift */,
 				71AFDF63247BB7F4009C25E6 /* ChartView.swift */,
@@ -218,7 +227,9 @@
 				71B7AC00247806F500E87789 /* Suggestions.swift in Sources */,
 				71AFDF66247BB7F8009C25E6 /* ProfilView.swift in Sources */,
 				03C78C1E246AC2F300C8C34E /* categorie.swift in Sources */,
+				712EA913247C13E6009AF248 /* OneSuiviBienEtreView.swift in Sources */,
 				03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */,
+				712EA912247C13E6009AF248 /* SuiviBienEtre2.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */,
 				71B7AC02247806FC00E87789 /* colorExtension.swift in Sources */,
@@ -226,6 +237,7 @@
 				71AFDF59247BB661009C25E6 /* ProfilM.swift in Sources */,
 				71A11F012477F202001B5380 /* ContactDocView.swift in Sources */,
 				03C78C20246AEA8100C8C34E /* OneCategorieView.swift in Sources */,
+				712EA914247C13E6009AF248 /* SuiviBienEtre.swift in Sources */,
 				71B2BA0F246424F7003D84CE /* ContentView.swift in Sources */,
 				03C78C28246C2A8300C8C34E /* creationProfil.swift in Sources */,
 				71AFDF5D247BB6AB009C25E6 /* GraphView.swift in Sources */,
