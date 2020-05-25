@@ -9,8 +9,29 @@
 import SwiftUI
 
 struct LeSaviezVousView: View {
+    @Environment(\.presentationMode) var presentationMode
+    var customBackButton : some View {
+        
+        Button(action: {
+            print ("retour")
+             self.presentationMode.wrappedValue.dismiss()
+        }) {
+            Circle()
+                                   .frame(width: 30.0, height: 30.0)
+                                   .foregroundColor(.white)
+                                   .overlay(Button(action: {},
+                                                   label:
+                                       {Text("< ").foregroundColor(.gray)
+                                           .padding(.leading, 2.0)
+                                           
+                                   }
+                                   ))
+                                   .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+        }
+    }
     
     var body: some View {
+        
         ZStack{
             
             Image("fond1")
@@ -20,18 +41,22 @@ struct LeSaviezVousView: View {
             VStack{
                 //Navigation bar
                 HStack{
-                    Circle()
-                        .frame(width: 30.0, height: 30.0)
-                        .foregroundColor(.white)
-                        .overlay(Button(action: {},
-                                        label:
-                            {Text("< ").foregroundColor(.gray)
-                                .padding(.leading, 2.0)
-                                
-                        }
-                        ))
-                        .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                    
+                  Button(action: {
+                    print("retour actu")
+                      // self.presentationMode.wrappedValue.dismiss()
+                  }) {
+                      Circle()
+                                             .frame(width: 30.0, height: 30.0)
+                                             .foregroundColor(.white)
+                                             .overlay(Button(action: {},
+                                                             label:
+                                                 {Text("< ").foregroundColor(.gray)
+                                                     .padding(.leading, 2.0)
+                                                     
+                                             }
+                                             ))
+                                             .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
+                  }
                     Spacer()
                     Text("Le Saviez-Vous?").font(.title).bold()
                         .padding(.trailing, 15.0)
@@ -77,6 +102,11 @@ struct LeSaviezVousView: View {
                         .padding(.all, 43.0))
             }
         }
+    .navigationBarTitle("")
+     
+        .navigationBarBackButtonHidden(true)
+    .navigationBarItems(leading: customBackButton)
+        
     }
 }
 

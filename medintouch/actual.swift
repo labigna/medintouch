@@ -44,7 +44,7 @@ struct actual: View {
                     
                     // Le saviez-vous ?
                     
-                    Button(action: {}) {
+                    NavigationLink(destination: LeSaviezVousView()) {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(width: 180.0, height: 40.0)
@@ -88,8 +88,9 @@ struct actual: View {
                         HStack{
                             // Articles
                             
+                            NavigationLink(destination: Suggestions()) {
                             OneActualView(img: "epice", titre: "Epices et bien-être")
-                            
+                            }
                             OneActualView(img: "aloe", titre: "L'Aloe Vera")
                             
                             OneActualView(img: "coquelicot", titre: "Le pavot")
@@ -97,6 +98,7 @@ struct actual: View {
                             OneActualView(img: "nut", titre: "La châtaigne")
                             OneActualView(img: "tisane", titre: "Infusion aux herbes")
                         }
+                        .padding(.horizontal, 130.0)
                     }
                     
                     

@@ -24,42 +24,18 @@ struct categorie: View {
         NavigationView{
             
             ZStack{
-                
                 Image("fond vert")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack{
-                    
                     HStack{
-                        
-                        Spacer()
-                        ZStack{
-                            
-        //Navigation bar
-                            Circle()
-                                .frame(width: 30.0, height: 30.0)
-                                .foregroundColor(.white)
-                                .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                            
-                            
-                            Button(action: {},
-                                   label:
-                                {Text("< ").foregroundColor(.gray)
-                                    
-                            }
-                            )
-                        }
-                        Spacer()
-                        Spacer()
+                       Spacer()
                         Text("Recherche").font(.title).bold()
-                        
-                        Spacer()
+                            .padding(.trailing, 30.0)
                     }
                     .padding(.top, -60.0)
-                    
-                    
-                    
+
                     // Barre de recherche
                     VStack{
                         
@@ -75,7 +51,7 @@ struct categorie: View {
                                     .blur(radius: 3))
                                 .offset(x: 2, y: 4)
                                 .mask(RoundedRectangle(cornerRadius: 20)
-                                    .fill(LinearGradient(gradient: Gradient (colors: [Color.black,Color.clear]), startPoint: .topLeading, endPoint: .bottomTrailing)))
+                                    .fill(LinearGradient(gradient: Gradient (colors: [Color.black.opacity(0.35),Color.clear]), startPoint: .topLeading, endPoint: .bottomTrailing)))
                         )
                     }
                     // Image catégorie + txt
@@ -107,8 +83,6 @@ struct categorie: View {
                             Spacer()
                             OneCategorieView(img: "yoga", titre: "Yoga") }
                             .padding([.top, .leading, .trailing], 26.0)
-                        
-                        
                     }
                 }
             }
