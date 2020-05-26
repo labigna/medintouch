@@ -11,6 +11,7 @@ import SwiftUI
 struct PharmaView: View {
     
      @Binding var navigationBarIsHidden : Bool
+
     
     var body: some View {
         ZStack{

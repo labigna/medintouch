@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var user : User
     var body: some View {
         ZStack{
             // fond
@@ -16,15 +17,15 @@ struct LoginView: View {
             
             HStack{
                 VStack{
-//                    Text("Bienvenue sur")
-//                        .font(.title)
-//                        .fontWeight(.ultraLight)
-//
-//                    Image("medmed")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .padding([.top, .leading], -29.0)
-//                        .frame(width: 90.0, height: 50.0)
+                    //                    Text("Bienvenue sur")
+                    //                        .font(.title)
+                    //                        .fontWeight(.ultraLight)
+                    //
+                    //                    Image("medmed")
+                    //                        .resizable()
+                    //                        .aspectRatio(contentMode: .fit)
+                    //                        .padding([.top, .leading], -29.0)
+                    //                        .frame(width: 90.0, height: 50.0)
                     
                     //                    photo arbre
                     Image("arbre").resizable().aspectRatio(contentMode: .fill)
@@ -98,8 +99,7 @@ struct LoginView: View {
                         })
                     HStack{
                         Spacer()
-                        Button(action: {
-                        }) {
+                        Button(action: {self.user.toggle()}) {
                             RoundedRectangle(cornerRadius: 20)
                                 
                                 .fill(Color.greenBG)
@@ -116,7 +116,9 @@ struct LoginView: View {
                                 })
                                 .frame(width:140, height: 40)
                                 .padding()
-                        }}
+                        }
+                        
+                    }
                     //
                     
                     

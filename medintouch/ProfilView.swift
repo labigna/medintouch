@@ -16,6 +16,7 @@ struct ProfilView: View {
     var choixSuivi1 : Int = 1
     var choixSuivi2 : Int = 2
     var choixSuivi3 : Int = 3
+    @EnvironmentObject var user : User
     
     init(){
         self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Epiderme"))
@@ -24,8 +25,6 @@ struct ProfilView: View {
         self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Moral"))
         self.suivis.append(Suivi(donnees: [2,4,5,2], titleSuivi: "Physique"))
     }
-    
-    
     
     var body: some View {
         
@@ -130,10 +129,27 @@ struct ProfilView: View {
                     .padding(.top, 20)
                     .padding(.bottom, 100.0)
                 }
+                if !user.getIdentification()
+                              {
+                                  // Identification
+                                  Rectangle()
+                                      .foregroundColor(Color.black.opacity(0.7))
+                                  NavigationLink(destination: LoginView())
+                                  {
+                                      VStack{
+                                          Text("Pour accéder au profil et pouvoir effectuer un suivi santé,\n veuillez vous identifier ou créer un compte")
+                                              .multilineTextAlignment(.center)
+                                              .padding()
+                                          Text("S'identifier")
+                                      }.padding()
+                                          .foregroundColor(.white)
+                                  }
+                              }
             }.edgesIgnoringSafeArea(.all)
                 .actionSheet(isPresented: $showingSheet) {
-                    ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion").foregroundColor(.red)),  .cancel(Text("Fermer")) ])
+                    ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion")),  .cancel(Text("Fermer")) ])
             }
+            
         }
     .navigationBarBackButtonHidden(true)
     }

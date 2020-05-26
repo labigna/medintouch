@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State var identified : Bool = false
     var body: some View {
         TabView {
             actual()
@@ -22,7 +22,7 @@ struct ContentView: View {
                     Image(systemName: "magnifyingglass")
                     Text("Recherche")
             }
-           ShowMapView()
+            ShowMapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Carte")

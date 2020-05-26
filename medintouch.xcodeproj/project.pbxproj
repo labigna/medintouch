@@ -38,6 +38,7 @@
 		71C19318247D4CC300E2648F /* recherche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C19315247D4CC200E2648F /* recherche.swift */; };
 		71C19319247D4CC300E2648F /* rechercheListPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C19316247D4CC200E2648F /* rechercheListPic.swift */; };
 		71C1931A247D4CC300E2648F /* rechercheListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C19317247D4CC200E2648F /* rechercheListView.swift */; };
+		71C1931C247DB55600E2648F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C1931B247DB55600E2648F /* User.swift */; };
 		71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAA3E62478048800585B01 /* ArticlesView.swift */; };
 		71F07513247D088A00387158 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F07512247D088A00387158 /* LoginView.swift */; };
 		71F0751B247D44F300387158 /* Praticien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F0751A247D44F300387158 /* Praticien.swift */; };
@@ -76,6 +77,7 @@
 		71C19315247D4CC200E2648F /* recherche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recherche.swift; sourceTree = "<group>"; };
 		71C19316247D4CC200E2648F /* rechercheListPic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rechercheListPic.swift; sourceTree = "<group>"; };
 		71C19317247D4CC200E2648F /* rechercheListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rechercheListView.swift; sourceTree = "<group>"; };
+		71C1931B247DB55600E2648F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71CAA3E62478048800585B01 /* ArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
 		71F07512247D088A00387158 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		71F0751A247D44F300387158 /* Praticien.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Praticien.swift; path = medintouch/Praticien.swift; sourceTree = SOURCE_ROOT; };
@@ -144,6 +146,7 @@
 				7189A27C2477F4C00056F6F5 /* PharmaView.swift */,
 				71A11F002477F202001B5380 /* ContactDocView.swift */,
 				03C78C1D246AC2F300C8C34E /* categorie.swift */,
+				71C1931B247DB55600E2648F /* User.swift */,
 				27D6F9C6247D33C600663DBD /* Map */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
 				71F07512247D088A00387158 /* LoginView.swift */,
@@ -247,6 +250,7 @@
 				7189A27D2477F4C00056F6F5 /* PharmaView.swift in Sources */,
 				71AFDF64247BB7F4009C25E6 /* ChartView.swift in Sources */,
 				714502A52477F0AA00CAFA2E /* LeSaviezVousView.swift in Sources */,
+				71C1931C247DB55600E2648F /* User.swift in Sources */,
 				03C78C24246BEC8100C8C34E /* OneActualView.swift in Sources */,
 				71C19319247D4CC300E2648F /* rechercheListPic.swift in Sources */,
 				03C78C22246BEB6D00C8C34E /* actual.swift in Sources */,
