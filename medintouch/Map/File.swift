@@ -26,7 +26,7 @@ class PointAnnotation : NSObject, MKAnnotation, Identifiable{
                   return .yellow
               case "Pharmacie":
                   return .green
-               case "Herboriste":
+               case "Herboristerie":
                   return .red
               default:
                   return .orange
@@ -62,7 +62,7 @@ class PointAnnotation : NSObject, MKAnnotation, Identifiable{
     return [
         PointAnnotation(Nom: "Pierre Amatore", Adresse: "Marseille", Specialitée: "Shiatsu",Horaire:"9H/18H", Localisation:.init(latitude: 43.291509, longitude: 5.380631), Type: "Praticien"),
 
-        PointAnnotation(Nom: "Herboriste Du Père Blaise ", Adresse: "4-6 Rue Meolan\ndu PèreBlaize\n13001 Marseille", Specialitée: "Herboristerie, Parapharmacie",Horaire:"9H/18H", Localisation: .init(latitude: 43.295389, longitude: 5.37849), Type: "Pharmacie"),
+        PointAnnotation(Nom: "Herboristerie Du Père Blaise ", Adresse: "4-6 Rue Meolan\ndu PèreBlaize\n13001 Marseille", Specialitée: "Herboristerie, Parapharmacie",Horaire:"9H/18H", Localisation: .init(latitude: 43.295389, longitude: 5.37849), Type: "Pharmacie"),
                
         PointAnnotation(Nom: " Yannick Torrel ", Adresse: "12 Place de gaulle\n13001 Marseille",Specialitée: "Homéopathe", Horaire:"9H/18H", Localisation: .init(latitude: 43.29502868652344, longitude: 5.376115798950195), Type: "Specialiste")
             ]
