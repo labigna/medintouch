@@ -105,6 +105,7 @@ struct ProfilView: View {
                                 .shadow(color: Color(UIColor.systemGray4), radius: 3, x: 5, y: 5)
                                 .overlay(Text("Effectuer le suivi quotidien").foregroundColor(.black))
                         }.padding()
+                        Divider()
                         HStack{
                             Text("Suivi")
                                 .font(.title)
@@ -117,7 +118,8 @@ struct ProfilView: View {
                                 .frame(width: 150)
                         }
                         .frame(width: 320)
-                        
+                         Divider()
+                            .padding(.bottom, 20)
                         if selectedGraph == 0{
                         ChartView(graphique1: suivis[choixSuivi1], graphique2: suivis[choixSuivi2], graphique3: suivis[choixSuivi3])
                         }

@@ -26,9 +26,6 @@ struct OneSuiviBienEtreView: View {
         
         HStack{
             // Image catégorie
-            
-            
-            
             NavigationLink( destination: SuiviBienEtre(choix: self.choice))
             { Image(self.image).renderingMode(.original)
                 .resizable()
@@ -47,18 +44,15 @@ struct OneSuiviBienEtreView: View {
                             .opacity(0.5)
                             
                             .overlay(
-                                
                                 Text(self.title)
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color.white)
-                                
                         )
                     }
                 )
-                
             }
-            
+        .padding(13)
         }
     }
 }

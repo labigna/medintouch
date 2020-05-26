@@ -114,26 +114,17 @@ struct SuiviBienEtre: View {
     
     var body: some View {
         ZStack{
-            Image("fond1").resizable()
+            Image("fond vert").resizable()
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 ScrollView{
                     
                     HStack{
-                        Spacer()
-                        ZStack{
-                            Circle()
-                                .frame(width: 30.0, height: 30.0)
-                                .foregroundColor(.white)
-                                .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                            Button(action: {},
-                                   label:
-                                {Text("< ").foregroundColor(.gray)
-                            }
-                            )
-                        }
-                        Spacer()
+                        Spacer(minLength: 175)
+ 
                         Text("Questionnaire").font(.title).bold()
+                            .padding(.bottom, 50)
+                        
                         Spacer()
                         
                     }
@@ -142,11 +133,12 @@ struct SuiviBienEtre: View {
                     
                     VStack{
                         ZStack{
+                     
                             RoundedRectangle(cornerRadius: 40)
                                 .frame(width: 310.0, height:400)
-                                .foregroundColor(Color(UIColor.systemGray6))
-                                .shadow(color: .white, radius: 7, x: -5, y: -5)
-                                .shadow(color: .gray, radius: 7, x: 5, y: 5)
+                                .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
+                                .shadow(color: .white, radius: 3, x: -5, y: -5)
+                                .shadow(color: Color(UIColor.systemGray4), radius: 3, x: 5, y: 5)
                                 .padding(.vertical, 15.0)
                                 
                                 .overlay(
@@ -154,7 +146,8 @@ struct SuiviBienEtre: View {
                                     VStack{             // liste de questions
                                         Text(titre1
                                         ).padding(.top, 10.0).padding(.bottom, 10.0).font(.system(size: 26))
-                                        
+                                        Divider()
+                                            .padding(.bottom, 20)
                                         HStack{
                                             Text(question1).padding(.leading)
                                             Toggle(isOn:
@@ -199,19 +192,20 @@ struct SuiviBienEtre: View {
                                     
                                     RoundedRectangle(cornerRadius: 40)
                                         .frame(width: 310.0, height:50)
-                                        .foregroundColor(Color(UIColor.systemGray6))
-                                        .shadow(color: .white, radius: 7, x: -5, y: -5)
-                                        .shadow(color: .gray, radius: 7, x: 5, y: 5)
+                                        .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
+                                        .shadow(color: .white, radius: 3, x: -5, y: -5)
+                                        .shadow(color: Color(UIColor.systemGray4), radius: 3, x: 5, y: 5)
                                         .padding(.vertical, 15.0)
                                     
-                                    Text("Valider").font(.system(size: 26))
+                                    Text("Valider").font(.system(size: 26)).foregroundColor(.black)
                                 }
                         }
                     }
                 }
             }
             
-        }
+            }
+        .navigationBarTitle("")
     }
 }
 

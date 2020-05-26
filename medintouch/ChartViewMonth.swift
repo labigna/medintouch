@@ -43,7 +43,7 @@ struct ChartViewMonth: View {
                                    .frame(width: 40, height: 20)
                            Text(graph3.titleSuivi)
                            }
-                   }
+                   }.padding(.leading)
                }.frame(width: 350)
     }
 }

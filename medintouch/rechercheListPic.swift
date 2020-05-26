@@ -53,6 +53,7 @@ struct rechercheListPic: View {
                     }
             )
         }
+        .frame(width: 50, height: 50)
         .padding(.horizontal, 10.0)
     }
 }

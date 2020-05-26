@@ -31,8 +31,7 @@ struct rechercheListView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 200.0, height: 120.0)
                 .mask(RoundedRectangle(cornerRadius: 20))
-                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
-                .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
+                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 5, y: 5)
                 
                 .overlay(
                     

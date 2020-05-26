@@ -29,10 +29,10 @@ struct ArticlesView: View {
                 // Titres
                 Text("Le romarin:")
                     .bold()
-                    .font(.system(size:20)).padding(.vertical, 8.0)
+                    .font(.title).padding(.vertical, 8.0)
                 Text("Les différents bienfaits du bourgeon de romarin:")
                     .bold()
-                    .font(.system(size:14))
+                    .font(.system(size:16))
                 
                 // Cadre et texte
                 RoundedRectangle(cornerRadius: 20)
@@ -41,7 +41,7 @@ struct ArticlesView: View {
                     
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.black, lineWidth: 4)
+                            .stroke(Color.gray, lineWidth: 4)
                             .blur(radius: 4)
                             .offset(x: 2, y: 2)
                             .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .topLeading, endPoint:.bottomTrailing)
@@ -50,7 +50,7 @@ struct ArticlesView: View {
                 )
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white, lineWidth: 4)
+                            .stroke(Color.white, lineWidth: 10)
                             .blur(radius: 4)
                             .offset(x: -2, y: -2)
                             .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .bottomTrailing, endPoint:.topLeading)
@@ -59,23 +59,28 @@ struct ArticlesView: View {
                             .overlay(
                                 VStack{
                                     ScrollView{
-                                        Text("Hépatite, cirrhose :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
+                                        Text("Hépatite, cirrhose :").foregroundColor(.black).fontWeight(.regular)
                                             .padding(.bottom, -12.0).padding(.top)
-                                        Text("le macérat de jeunes pousses de romarin est sans conteste la plante du foie. En plus de régénérer le foie et le détoxifier, il participe à sa protection et agit ainsi sur l'ensemble de l'organisme. C'est également un anti-oxydant qui lutte contre la formation des radicaux libres et protège ainsi différents organes ou tissus.")
-                                            .font(.system(size:15)).foregroundColor(.black).padding()
-                                        Text("Fatigue, déprime :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
+                                        Text("Le macérat de jeunes pousses de romarin est sans conteste la plante du foie. En plus de régénérer le foie et le détoxifier, il participe à sa protection et agit ainsi sur l'ensemble de l'organisme.\n C'est également un anti-oxydant qui lutte contre la formation des radicaux libres et protège ainsi différents organes ou tissus.").fontWeight(.light)
+                                            .foregroundColor(.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding()
+                                        Text("Fatigue, déprime :").foregroundColor(.black).fontWeight(.regular)
                                             .padding(.bottom, -12.0)
-                                        Text("l'action détoxifiante du macérat de jeunes pousses de romarin est également visible sur le système nerveux. Il va agir en améliorant la mémoire, diminuant la fatigue et en apportant du bien-être.")
-                                            .font(.system(size:15)).foregroundColor(.black).padding()
-                                        Text("Dérèglements de la thyroïde :").font(.system(size:15)).foregroundColor(.black).fontWeight(.bold)
+                                        Text("L'action détoxifiante du macérat de jeunes pousses de romarin est également visible sur le système nerveux.\n Il va agir en améliorant la mémoire, diminuant la fatigue et en apportant du bien-être.").fontWeight(.light)
+                                            .foregroundColor(.black).multilineTextAlignment(.center).padding()
+                                        Text("Dérèglements de la thyroïde :").foregroundColor(.black)
                                             .padding(.bottom, -12.0)
-                                        Text("le macérat de jeunes pousses de romarin influence l'ensemble du corps en agissant sur le foie. Il permet de gérer notamment les dérèglements de certaines glandes comme la thyroïde par exemple.")
-                                            .font(.system(size:15)).foregroundColor(.black).padding()
+                                        Text("le macérat de jeunes pousses de romarin influence l'ensemble du corps en agissant sur le foie. \nIl permet de gérer notamment les dérèglements de certaines glandes comme la thyroïde par exemple.").fontWeight(.light)
+                                            .foregroundColor(.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding()
                                     }
                                 }
                         )
                 )
             }
+            .padding(.bottom, 100)
         }
     }
 }

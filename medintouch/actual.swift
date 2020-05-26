@@ -39,9 +39,7 @@ struct actual: View {
                         Spacer()
                     }
                     .padding(.all, -55.0)
-                    
-                    
-                    
+
                     // Le saviez-vous ?
                     
                     NavigationLink(destination: LeSaviezVousView()) {
@@ -73,16 +71,12 @@ struct actual: View {
                     .padding(.trailing, 160.0)
                     
                     Divider()
-                        .padding([.top, .leading], 4.0)
                         .frame(width: 300.0, height: 43.0)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: Color.black.opacity(0.3), radius: 8, x: 5, y: 5)
-                        .shadow(color: Color.white, radius: 10, x: -5, y: -5)
                     
                     Text("Suggestions de saison")
-                        .font(.headline)
-                        .fontWeight(.thin)
-                    
+                        .font(.title)
+                        .fontWeight(.regular)
+                        .padding(.trailing, 80)
                     
                     ScrollView(.horizontal){
                         HStack{
@@ -117,10 +111,11 @@ struct actual: View {
                             .fill(LinearGradient(gradient: Gradient (colors: [Color.black,Color.clear]), startPoint: .topLeading, endPoint: .bottomTrailing)))
                         .overlay(
                             Text("Défilez afin de découvrir les différents bienfaits en fonction de la saison.")
-                                .font(.caption)
+                                .font(.body)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                     )
+                    Divider()
                  Image("medinlogo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
