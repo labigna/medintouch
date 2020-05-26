@@ -16,20 +16,12 @@ struct ArticlesView: View {
             VStack{
                 HStack{
                     // Bouton Back
-                    NavigationLink(destination: categorie()) {
-                        ZStack{
-                            Circle()
-                                .frame(width: 30.0, height: 30.0).foregroundColor(.white).shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                            Text("<").foregroundColor(.gray)
-                                .font(.system(size:30))
-                       }
-                    }
-                    .padding(.leading, 38.0)
+              
                     Spacer()
                     
                     Text("Articles").bold().font(.system(size: 30))
                     //Spacer()
-                }.padding(.trailing, 36.0).padding(.bottom, 11.0)
+                }.padding(.trailing, 36.0).padding(.bottom, 50.0)
                 
                 Image("romarin").resizable().aspectRatio(contentMode: .fill)
                     .frame(width: 280, height: 130).mask(RoundedRectangle(cornerRadius: 20)).shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10).padding(.top, -13.0)

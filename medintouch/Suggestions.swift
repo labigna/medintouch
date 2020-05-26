@@ -22,17 +22,7 @@ struct Suggestions: View {
             HStack{
                 Spacer()
                 
-// Bouton Back
-     
-                ZStack{
-                    Circle()
-                        .frame(width: 30.0, height: 30.0).foregroundColor(.white).shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
 
-                    Text("<").foregroundColor(.gray)
-                        //.padding(.leading, 15.0)
-                        .font(.system(size:30))
-
-                }
                 Spacer()
                 Text("Suggestions").bold().font(.system(size: 30))
                 Spacer()

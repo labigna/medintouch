@@ -23,7 +23,7 @@ struct ChartViewMonth: View {
            
            var body: some View {
                HStack{
-                   MultiLineChartView(data: [(graph1.donnees, GradientColors.green), (graph2.donnees, GradientColors.purple), (graph3.donnees, GradientColors.orngPink)], title: "", rateValue: 0)
+                   MultiLineChartView(data: [(graph1.donnees, GradientColors.green), (graph2.donnees, GradientColors.purple), (graph3.donnees, GradientColors.orngPink)], title: "30 jours", rateValue: 30)
 
                    VStack(alignment: .leading){
                        HStack{

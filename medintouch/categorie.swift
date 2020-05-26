@@ -12,7 +12,7 @@ struct categorie: View {
     
     @State private var page = 0
     @State private var choice: Bool = false
-    @State private var recherche: String = ""
+    @State private var search: String = ""
     
     init() {
         UITableView.appearance().backgroundColor = .clear
@@ -37,7 +37,7 @@ struct categorie: View {
                     // Barre de recherche
                     VStack{
                         
-                        TextField("🔎  Rechercher par mot-clef", text: self.$recherche)
+                        TextField("🔎  Rechercher par mot-clef", text: self.$search)
                             .foregroundColor(Color.black)
                             .padding(.all, 33.0)
                             .frame(width: 350.0, height: 50.0)
@@ -57,28 +57,29 @@ struct categorie: View {
                         HStack{
                             
                             OneCategorieView(img: "aliment", titre: "Alimentation")
-                            Spacer()
+                           .padding(.trailing, 30)
                             OneCategorieView(img: "mask", titre: "Beauté Maison") }
                             .padding([.top, .leading, .trailing], 26.0)
                         
                         HStack{
-                            
+                            NavigationLink(destination: recherche()){
                             OneCategorieView(img: "fleur", titre: "Botanique")
-                            Spacer()
+                                .padding(.trailing, 30)}
                             OneCategorieView(img: "medoc", titre: "Complément") }
+                           
                             .padding([.top, .leading, .trailing], 26.0)
                         
                         HStack{
                             
                             OneCategorieView(img: "water", titre: "Aquathérapie")
-                            Spacer()
+                            .padding(.trailing, 30)
                             OneCategorieView(img: "oil", titre: "Aromathérapie") }
                             .padding([.top, .leading, .trailing], 26.0)
                         
                         HStack{
                             
                             OneCategorieView(img: "massage", titre: "Massages")
-                            Spacer()
+                            .padding(.trailing, 30)
                             OneCategorieView(img: "yoga", titre: "Yoga") }
                             .padding([.top, .leading, .trailing], 26.0)
                     }

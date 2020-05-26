@@ -118,8 +118,12 @@ struct ProfilView: View {
                         }
                         .frame(width: 320)
                         
+                        if selectedGraph == 0{
                         ChartView(graphique1: suivis[choixSuivi1], graphique2: suivis[choixSuivi2], graphique3: suivis[choixSuivi3])
-                        
+                        }
+                        else{
+                             ChartViewMonth(graphique1: suivis[choixSuivi1], graphique2: suivis[choixSuivi2], graphique3: suivis[choixSuivi3])
+                        }
                     }
                     .padding(.top, 20)
                     .padding(.bottom, 100.0)

@@ -194,9 +194,7 @@ struct SuiviBienEtre: View {
                             )
                         }
                         // Bouton Valider
-                        Button(action: {},
-                               
-                               label: {
+                        NavigationLink(destination: ProfilView()){
                                 ZStack{
                                     
                                     RoundedRectangle(cornerRadius: 40)
@@ -209,7 +207,6 @@ struct SuiviBienEtre: View {
                                     Text("Valider").font(.system(size: 26))
                                 }
                         }
-                        )
                     }
                 }
             }
