@@ -32,9 +32,8 @@ struct rechercheListPic: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 70.0, height: 50.0)
                 .mask(RoundedRectangle(cornerRadius: 20))
-                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 10, y: 10)
-                .shadow(color: Color.white.opacity(0.10), radius: 10, x: -10, y: -10)
-                
+                .shadow(color: Color.black.opacity(0.3), radius: 5, x: 2, y: 2)
+              
                 .overlay(
                     
                     VStack{ Spacer()

@@ -16,7 +16,7 @@ struct recherche: View {
     init() {
         // To remove all separators including the actual ones:
         UITableView.appearance().backgroundColor = .clear
-        UITableViewCell.appearance().backgroundColor = .clear
+        //UITableViewCell.appearance().backgroundColor = .clear
     }
     
     var body: some View {
@@ -26,9 +26,6 @@ struct recherche: View {
             Image("fond1").resizable()
                 .edgesIgnoringSafeArea(.all)
             
-            
-            
-            
             VStack {
                 
                 rechercheListView(img: "fleur", titre: "Botanique")
@@ -37,101 +34,88 @@ struct recherche: View {
                 
                 
                 Text("Articles de la catégorie")
-                    .font(.footnote)
-                    .fontWeight(.thin)
+                    .font(.body)
+                    .fontWeight(.regular)
                     .padding(.bottom, 5.0)
+                  
                 
                 List{
-                    ScrollView{
-                        
-                        
-                        VStack(alignment: .leading) {
-                            NavigationLink(destination: ArticlesView()){
-                                HStack{
-                                    rechercheListPic(img: "romarin", titre: "")
-                                    
-                                    Text("Les différents bienfaits du bourgeon de romarin")
-                                        .font(.caption)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(.black)
-                                }
-                            }
+                    VStack(alignment: .leading) {
+                        NavigationLink(destination: ArticlesView()){
                             HStack{
-                                rechercheListPic(img: "thym", titre: "")
-                                Text("Le thym et ses vertus bienfaisantes contre la toux.")
-                                    .font(.caption)
+                                rechercheListPic(img: "romarin", titre: "")
+                                Text("Les différents bienfaits du bourgeon de romarin")
+                                    .font(.body)
                                     .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "marguerite", titre: "")
-                                Text("La marguerite en infusion et décoction.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            
-                            HStack{
-                                rechercheListPic(img: "fougere", titre: "")
-                                Text("Plantes préhistoriques : la Fougère.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "rose", titre: "")
-                                Text("Le bourgeon de rose et son utilisation en gemmothérapie.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "cactus", titre: "")
-                                Text("Les bienfaits étonnant du jus de cactus.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            
-                            HStack{
-                                rechercheListPic(img: "lavande", titre: "")
-                                Text("La lavande : une plante aux multiples vertues.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "sakura", titre: "")
-                                Text("Pourquoi le Ohanami est-il important et à quelle période être présent.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "nenuphar", titre: "")
-                                Text("Comment profiter des vertus du nénuphar en phytothérapie.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
-                            HStack{
-                                rechercheListPic(img: "tournesol", titre: "")
-                                Text("Tournesol : propriétés et utilisations de ses graines.")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                
-                            }
+                                                                }
+                        }.foregroundColor(.black)
+                          
+                         NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "thym", titre: "")
+                            Text("Le thym et ses vertus bienfaisantes contre la toux.")
+                                .font(.body)
+                                .fontWeight(.light)
+  
                         }
+                             }.foregroundColor(.black)
+                             NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "marguerite", titre: "")
+                            Text("La marguerite en infusion et décoction.")
+                                .font(.body)
+                                .fontWeight(.light)
+                        }
+                         }.foregroundColor(.black)
+                                 NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "fougere", titre: "")
+                            Text("Plantes préhistoriques : la Fougère.")
+                               .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                                     NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "rose", titre: "")
+                            Text("Le bourgeon de rose et son utilisation en gemmothérapie.")
+                               .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                                         NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "cactus", titre: "")
+                            Text("Les bienfaits étonnant du jus de cactus.")
+                              .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                         NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "lavande", titre: "")
+                            Text("La lavande : une plante aux multiples vertues.")
+                                .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                             NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "sakura", titre: "")
+                            Text("Pourquoi le Ohanami est-il important et à quelle période être présent.")
+                                .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                                 NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "nenuphar", titre: "")
+                            Text("Comment profiter des vertus du nénuphar en phytothérapie.")
+                            .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
+                                     NavigationLink(destination: ArticlesView()){
+                        HStack{
+                            rechercheListPic(img: "tournesol", titre: "")
+                            Text("Tournesol : propriétés et utilisations de ses graines.")
+                              .font(.body)
+                                                               .fontWeight(.light)
+                        } }.foregroundColor(.black)
                     }
                 }
             }

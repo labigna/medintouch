@@ -57,14 +57,14 @@ struct categorie: View {
                         HStack{
                             
                             OneCategorieView(img: "aliment", titre: "Alimentation")
-                           .padding(.trailing, 30)
+                           .padding(.trailing, 40)
                             OneCategorieView(img: "mask", titre: "Beauté Maison") }
                             .padding([.top, .leading, .trailing], 26.0)
                         
                         HStack{
                             NavigationLink(destination: recherche()){
                             OneCategorieView(img: "fleur", titre: "Botanique")
-                                .padding(.trailing, 30)}
+                                .padding(.trailing, 40)}
                             OneCategorieView(img: "medoc", titre: "Complément") }
                            
                             .padding([.top, .leading, .trailing], 26.0)
@@ -72,14 +72,14 @@ struct categorie: View {
                         HStack{
                             
                             OneCategorieView(img: "water", titre: "Aquathérapie")
-                            .padding(.trailing, 30)
+                           .padding(.trailing, 40)
                             OneCategorieView(img: "oil", titre: "Aromathérapie") }
                             .padding([.top, .leading, .trailing], 26.0)
                         
                         HStack{
                             
                             OneCategorieView(img: "massage", titre: "Massages")
-                            .padding(.trailing, 30)
+                            .padding(.trailing, 40)
                             OneCategorieView(img: "yoga", titre: "Yoga") }
                             .padding([.top, .leading, .trailing], 26.0)
                     }

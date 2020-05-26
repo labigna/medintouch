@@ -45,7 +45,7 @@ struct rechercheListView: View {
                             .overlay(
                                 
                                 Text(self.title)
-                                    .font(.callout)
+                                    .font(.title)
                                     .fontWeight(.regular)
                                     .foregroundColor(Color.white)
                                 

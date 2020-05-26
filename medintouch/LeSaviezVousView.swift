@@ -37,12 +37,13 @@ struct LeSaviezVousView: View {
             VStack{
                 //Navigation bar
                 HStack{
-                    customBackButton
+            
                     Spacer()
                     Text("Le Saviez-Vous?").font(.title).bold()
                         .padding(.trailing, 15.0)
                     
-                }.padding([.leading, .bottom], 22.0)
+                }.padding(.leading, 22.0)
+                    .padding(.bottom, 30)
                 
                 Image ("thym")
                     .resizable()
@@ -65,13 +66,13 @@ struct LeSaviezVousView: View {
                     
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.black, lineWidth: 4)
+                            .stroke(Color.gray, lineWidth: 4)
                             .blur(radius: 4)
                             .offset(x: 2, y: 2)
                             .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .topLeading, endPoint:.bottomTrailing))))
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white, lineWidth: 4)
+                            .stroke(Color.white, lineWidth: 10)
                             .blur(radius: 4)
                             .offset(x: -2, y: -2)
                             .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient( gradient: Gradient(colors: [Color.black, Color.clear]), startPoint: .bottomTrailing, endPoint:.topLeading))))
@@ -82,11 +83,11 @@ struct LeSaviezVousView: View {
                         .lineLimit(nil)
                         .padding(.all, 43.0))
             }
+            .padding(.bottom, 80)
         }
-    .navigationBarTitle("")
-     
-        .navigationBarBackButtonHidden(true)
         
+    .navigationBarTitle("")
+
     }
 }
 
