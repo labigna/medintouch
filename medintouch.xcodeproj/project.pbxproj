@@ -14,6 +14,9 @@
 		03C78C26246C1B6100C8C34E /* extension color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C25246C1B6100C8C34E /* extension color.swift */; };
 		03C78C28246C2A8300C8C34E /* creationProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C27246C2A8300C8C34E /* creationProfil.swift */; };
 		03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */; };
+		27D6F9D2247D3B5000663DBD /* ShowMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6F9D1247D35A300663DBD /* ShowMapView.swift */; };
+		27D6F9D3247D3B5900663DBD /* Praticien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6F9D0247D359C00663DBD /* Praticien.swift */; };
+		27D6F9D4247D3B5C00663DBD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6F9CF247D359300663DBD /* File.swift */; };
 		712EA912247C13E6009AF248 /* SuiviBienEtre2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA90F247C13E6009AF248 /* SuiviBienEtre2.swift */; };
 		712EA913247C13E6009AF248 /* OneSuiviBienEtreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */; };
 		712EA914247C13E6009AF248 /* SuiviBienEtre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EA911247C13E6009AF248 /* SuiviBienEtre.swift */; };
@@ -46,6 +49,9 @@
 		03C78C25246C1B6100C8C34E /* extension color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension color.swift"; sourceTree = "<group>"; };
 		03C78C27246C2A8300C8C34E /* creationProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creationProfil.swift; sourceTree = "<group>"; };
 		03C78C29246C2E5E00C8C34E /* OneQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneQuestionView.swift; sourceTree = "<group>"; };
+		27D6F9CF247D359300663DBD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		27D6F9D0247D359C00663DBD /* Praticien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Praticien.swift; path = "../../../../MAP MEDINTOUCH 2 2/MAP MEDINTOUCH/Praticien.swift"; sourceTree = "<group>"; };
+		27D6F9D1247D35A300663DBD /* ShowMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapView.swift; sourceTree = "<group>"; };
 		712EA90F247C13E6009AF248 /* SuiviBienEtre2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre2.swift; sourceTree = "<group>"; };
 		712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSuiviBienEtreView.swift; sourceTree = "<group>"; };
 		712EA911247C13E6009AF248 /* SuiviBienEtre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiviBienEtre.swift; sourceTree = "<group>"; };
@@ -83,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D6F9C6247D33C600663DBD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				27D6F9D1247D35A300663DBD /* ShowMapView.swift */,
+				27D6F9D0247D359C00663DBD /* Praticien.swift */,
+				27D6F9CF247D359300663DBD /* File.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		71B2B9FE246424F7003D84CE = {
 			isa = PBXGroup;
 			children = (
@@ -105,14 +121,11 @@
 				03C78C21246BEB6D00C8C34E /* actual.swift */,
 				71B2BA0A246424F7003D84CE /* AppDelegate.swift */,
 				71B2BA10246424F8003D84CE /* Assets.xcassets */,
-				03C78C1D246AC2F300C8C34E /* categorie.swift */,
 				71B2BA0E246424F7003D84CE /* ContentView.swift */,
 				71CAA3E62478048800585B01 /* ArticlesView.swift */,
-				7189A27C2477F4C00056F6F5 /* PharmaView.swift */,
 				71B7AC01247806FC00E87789 /* colorExtension.swift */,
 				03C78C27246C2A8300C8C34E /* creationProfil.swift */,
 				71B7ABFF247806F500E87789 /* Suggestions.swift */,
-				71A11F002477F202001B5380 /* ContactDocView.swift */,
 				71AFDF58247BB661009C25E6 /* ProfilM.swift */,
 				712EA910247C13E6009AF248 /* OneSuiviBienEtreView.swift */,
 				712EA911247C13E6009AF248 /* SuiviBienEtre.swift */,
@@ -122,6 +135,10 @@
 				71AFDF63247BB7F4009C25E6 /* ChartView.swift */,
 				71AFDF65247BB7F8009C25E6 /* ProfilView.swift */,
 				03C78C25246C1B6100C8C34E /* extension color.swift */,
+				7189A27C2477F4C00056F6F5 /* PharmaView.swift */,
+				71A11F002477F202001B5380 /* ContactDocView.swift */,
+				03C78C1D246AC2F300C8C34E /* categorie.swift */,
+				27D6F9C6247D33C600663DBD /* Map */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
 				71F07512247D088A00387158 /* LoginView.swift */,
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
@@ -220,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D6F9D3247D3B5900663DBD /* Praticien.swift in Sources */,
 				03C78C26246C1B6100C8C34E /* extension color.swift in Sources */,
 				71B2BA0B246424F7003D84CE /* AppDelegate.swift in Sources */,
 				7189A27D2477F4C00056F6F5 /* PharmaView.swift in Sources */,
@@ -228,8 +246,10 @@
 				03C78C24246BEC8100C8C34E /* OneActualView.swift in Sources */,
 				03C78C22246BEB6D00C8C34E /* actual.swift in Sources */,
 				71B7AC00247806F500E87789 /* Suggestions.swift in Sources */,
+				27D6F9D4247D3B5C00663DBD /* File.swift in Sources */,
 				71AFDF66247BB7F8009C25E6 /* ProfilView.swift in Sources */,
 				03C78C1E246AC2F300C8C34E /* categorie.swift in Sources */,
+				27D6F9D2247D3B5000663DBD /* ShowMapView.swift in Sources */,
 				712EA913247C13E6009AF248 /* OneSuiviBienEtreView.swift in Sources */,
 				03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */,
 				712EA912247C13E6009AF248 /* SuiviBienEtre2.swift in Sources */,

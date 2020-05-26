@@ -22,7 +22,7 @@ struct ContentView: View {
                     Image(systemName: "magnifyingglass")
                     Text("Recherche")
             }
-            Text("Carte")
+           ShowMapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Carte")
