@@ -18,9 +18,9 @@ struct ProfilView: View {
     var choixSuivi3 : Int = 3
     
     init(){
-        self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Hépiderme"))
+        self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Epiderme"))
         self.suivis.append(Suivi(donnees: [1,2,3,4,5], titleSuivi: "Articulation"))
-        self.suivis.append(Suivi(donnees: [5,1,4], titleSuivi: "Système digestif"))
+        self.suivis.append(Suivi(donnees: [5,1,4], titleSuivi: "Digestion"))
         self.suivis.append(Suivi(donnees: [2,1,4,5,2], titleSuivi: "Moral"))
         self.suivis.append(Suivi(donnees: [2,4,5,2], titleSuivi: "Physique"))
     }

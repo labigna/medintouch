@@ -13,7 +13,6 @@ struct LeSaviezVousView: View {
     var customBackButton : some View {
         
         Button(action: {
-            print ("retour")
              self.presentationMode.wrappedValue.dismiss()
         }) {
             Circle()
@@ -38,22 +37,7 @@ struct LeSaviezVousView: View {
             VStack{
                 //Navigation bar
                 HStack{
-                  Button(action: {
-                    print("retour actu")
-                      // self.presentationMode.wrappedValue.dismiss()
-                  }) {
-                      Circle()
-                                             .frame(width: 30.0, height: 30.0)
-                                             .foregroundColor(.white)
-                                             .overlay(Button(action: {},
-                                                             label:
-                                                 {Text("< ").foregroundColor(.gray)
-                                                     .padding(.leading, 2.0)
-                                                     
-                                             }
-                                             ))
-                                             .shadow(color: Color.black.opacity(0.2), radius: 8, x: 5, y: 5)
-                  }
+                    customBackButton
                     Spacer()
                     Text("Le Saviez-Vous?").font(.title).bold()
                         .padding(.trailing, 15.0)
@@ -102,7 +86,6 @@ struct LeSaviezVousView: View {
     .navigationBarTitle("")
      
         .navigationBarBackButtonHidden(true)
-    .navigationBarItems(leading: customBackButton)
         
     }
 }

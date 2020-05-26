@@ -35,6 +35,7 @@
 		71B7AC00247806F500E87789 /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B7ABFF247806F500E87789 /* Suggestions.swift */; };
 		71B7AC02247806FC00E87789 /* colorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B7AC01247806FC00E87789 /* colorExtension.swift */; };
 		71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAA3E62478048800585B01 /* ArticlesView.swift */; };
+		71F07513247D088A00387158 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F07512247D088A00387158 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		71B7ABFF247806F500E87789 /* Suggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
 		71B7AC01247806FC00E87789 /* colorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorExtension.swift; sourceTree = "<group>"; };
 		71CAA3E62478048800585B01 /* ArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		71F07512247D088A00387158 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				71AFDF65247BB7F8009C25E6 /* ProfilView.swift */,
 				03C78C25246C1B6100C8C34E /* extension color.swift */,
 				71B2BA18246424F8003D84CE /* Info.plist */,
+				71F07512247D088A00387158 /* LoginView.swift */,
 				71B2BA15246424F8003D84CE /* LaunchScreen.storyboard */,
 				03C78C23246BEC8100C8C34E /* OneActualView.swift */,
 				714502A42477F0AA00CAFA2E /* LeSaviezVousView.swift */,
@@ -230,6 +233,7 @@
 				712EA913247C13E6009AF248 /* OneSuiviBienEtreView.swift in Sources */,
 				03C78C2A246C2E5E00C8C34E /* OneQuestionView.swift in Sources */,
 				712EA912247C13E6009AF248 /* SuiviBienEtre2.swift in Sources */,
+				71F07513247D088A00387158 /* LoginView.swift in Sources */,
 				71B2BA0D246424F7003D84CE /* SceneDelegate.swift in Sources */,
 				71CAA3E72478048800585B01 /* ArticlesView.swift in Sources */,
 				71B7AC02247806FC00E87789 /* colorExtension.swift in Sources */,
