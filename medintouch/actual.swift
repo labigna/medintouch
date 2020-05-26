@@ -32,7 +32,7 @@ struct actual: View {
                 VStack{
                     HStack{
                         Spacer()
-                        
+                          
                         Spacer()
                         Text("Actualités").font(.title).bold()
                         
@@ -121,6 +121,12 @@ struct actual: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                     )
+                 Image("medinlogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200)
+                    .padding(.vertical)
+                    .opacity(0.8)
                     Spacer()
                 }
             }

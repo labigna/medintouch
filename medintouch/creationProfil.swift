@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct creationProfil: View {
+    @State private var age: String = ""
+    @State private var taille: String = ""
+    @State private var poids: String = ""
     var body: some View {
         
         ZStack{
@@ -41,9 +44,13 @@ struct creationProfil: View {
                     Spacer()
                 }
                 
-                Text("Bienvenue sur Med'in'Touch !").font(.headline).padding(.vertical, 30.0)
-     
-                ScrollView{
+               ScrollView{
+                
+                Text("Bienvenue sur Med'in'Touch !").font(.headline).padding(.vertical, 25.0)
+                
+           
+                
+              
                    
                     ZStack{
                     OneQuestionView(img: "medoc", titre: "Veuillez sélectionner un avatar : ")
@@ -55,23 +62,24 @@ struct creationProfil: View {
                     
                     ZStack(alignment: .leading){
                         OneQuestionView(img: "medoc", titre: "Merci de nous indiquer votre :")
+                            .padding(.bottom, 40.0)
                            
-                        
+                      
                         VStack(alignment: .leading){
-                           
-                            Text("Âge :")
-                                .font(.callout)
-                                .padding(.vertical, 15.0)
-                            Text("Taille :")
-                                .font(.callout)
-                                .padding(.vertical, 15.0)
-                            Text("Poids :")
-                                .font(.callout)
-                                .padding(.vertical, 15.0)
+                            
+                            TextField("Veuillez saisir votre âge", text: $age).textFieldStyle(RoundedBorderTextFieldStyle()).font(.callout).padding(.horizontal, 35.0)
+                            Text(" \(age)")
+                             
+                         TextField("Veuillez saisir votre taille", text: $taille).textFieldStyle(RoundedBorderTextFieldStyle()).font(.callout).padding(.horizontal, 35.0)
+                           Text(" \(taille)")
+                            
+                            TextField("Veuillez saisir votre poids", text: $poids).padding(.horizontal, 35.0).textFieldStyle(RoundedBorderTextFieldStyle()).font(.callout)
+                                                      Text(" \(poids)")
                                 
                         }
-                        .padding(.leading, 50.0)
-                        }
+                        
+                    }
+                    .padding([.leading, .trailing], 111.0)
                     OneQuestionView(img: "medoc", titre: "Avez-vous des prédispositions ?")
                   
                 

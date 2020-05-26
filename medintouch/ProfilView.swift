@@ -31,7 +31,9 @@ struct ProfilView: View {
         
         NavigationView{
             ZStack{
-                Color(UIColor.systemGray6)
+                Image("fond vert")
+                    .resizable()
+                //Color(UIColor.systemGray6)
                 ScrollView{
                     VStack{
                         RoundedRectangle(cornerRadius: 40)
@@ -42,9 +44,13 @@ struct ProfilView: View {
                                 VStack(alignment: .leading){
                                     HStack{
                                         ZStack{
-                                            Capsule(style: .continuous)
+                                            LinearGradient(gradient: Gradient(colors: [.greenBG, .greenBGless]), startPoint: .leading, endPoint: .trailing)
+                                            .mask(
+                                            Capsule(style: .continuous))
+                                                .shadow(color: .white, radius: 3, x: -5, y: -5)
+                                                .shadow(color: .gray, radius: 3, x: 5, y: 5)
                                                 .frame(width: 80.0, height: 130.0)
-                                                .foregroundColor(Color(red: 0.961, green: 0.993, blue: 0.949))
+                                               
                                                 .padding(.top, 75.0)
                                             VStack{
                                                 Image("pexels-photo-614810").resizable()
@@ -64,8 +70,7 @@ struct ProfilView: View {
                                                         .frame(width: 50.0)
                                                 }
                                             }
-                                        }.shadow(color: .white, radius: 3, x: -5, y: -5)
-                                            .shadow(color: .gray, radius: 3, x: 5, y: 5)
+                                        }
                                         VStack(alignment: .leading){
                                             Text("Jerry Gaulay")
                                                 .font(.headline)
@@ -90,8 +95,11 @@ struct ProfilView: View {
                         
                         NavigationLink(destination: SuiviBienEtre2())
                         {
+                            LinearGradient(gradient: Gradient(colors: [.greenBG, .greenBGless]), startPoint: .bottomLeading, endPoint: .topTrailing)
+                                .mask(
                             Capsule()
-                                .foregroundColor(Color(UIColor.systemGray6))
+                                )
+                           
                                 .frame(width: 330.0, height: 50.0)
                                 .shadow(color: .white, radius: 3, x: -5, y: -5)
                                 .shadow(color: Color(UIColor.systemGray4), radius: 3, x: 5, y: 5)

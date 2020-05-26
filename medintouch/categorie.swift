@@ -15,7 +15,6 @@ struct categorie: View {
     @State private var recherche: String = ""
     
     init() {
-        
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
     }

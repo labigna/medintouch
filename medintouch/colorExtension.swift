@@ -17,4 +17,5 @@ static var breakWhite = Color(red: 245/255, green: 245/255, blue: 252/255)
     static let darkStart = Color(red: 50 / 255, green: 60 / 255, blue: 65 / 255)
     static let darkEnd = Color(red: 25 / 255, green: 25 / 255, blue: 30 / 255)
     static let greenBG = Color(red: 0.874, green: 0.963, blue: 0.835)
+    static let greenBGless = Color(red: 0.774, green: 0.863, blue: 0.735)
 }
