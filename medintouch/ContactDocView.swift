@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContactDocView: View {
+    @Binding var navigationBarIsHidden : Bool
     
     var body: some View {
         
@@ -99,13 +100,17 @@ struct ContactDocView: View {
                 }  .padding(.bottom, 80)
                 
             }
-        }.navigationBarHidden(false)
+        }.onAppear(perform: {
+               self.navigationBarIsHidden = false
+           })
+        .navigationBarTitle("")
+        .navigationBarHidden(self.navigationBarIsHidden)
     }
 }
 
 struct ContactDocView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDocView()
+        ContactDocView(navigationBarIsHidden: .constant(false))
     }
 }
 

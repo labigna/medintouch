@@ -135,6 +135,7 @@ struct ProfilView: View {
                     ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion").foregroundColor(.red)),  .cancel(Text("Fermer")) ])
             }
         }
+    .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -22,7 +22,7 @@ struct SuiviBienEtre2: View {
                     
                      Text("Catégories de suivi").bold().font(.system(size: 30))
                         .padding(.leading, 60)
-                        .padding(.bottom, 30)
+                        .padding(.bottom, 10)
                     //ScrollView{
                     HStack{
                         OneSuiviBienEtreView(img: "peau", titre: "Peau", choix: 1)

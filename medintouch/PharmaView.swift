@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct PharmaView: View {
+    
+     @Binding var navigationBarIsHidden : Bool
+    
     var body: some View {
         ZStack{
             Image("fond1")
@@ -100,13 +103,17 @@ struct PharmaView: View {
                 
             }
             .padding(.bottom, 80)
-        }
+        } .onAppear(perform: {
+               self.navigationBarIsHidden = false
+           })
+        .navigationBarTitle("")
+        .navigationBarHidden(self.navigationBarIsHidden)
     }
 }
 
 struct PharmaView_Previews: PreviewProvider {
     static var previews: some View {
-        PharmaView()
+        PharmaView(navigationBarIsHidden: .constant(false))
     }
 }
 

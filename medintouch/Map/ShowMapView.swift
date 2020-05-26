@@ -18,6 +18,7 @@ struct ShowMapView: View {
     @State private var recherche : String = ""
     @State private var selectedAnnotation: PointAnnotation?
     @State private var showPracticien = false
+    @State var navigationBarIsHidden : Bool = true
     
 
      var body: some View {
@@ -31,11 +32,11 @@ struct ShowMapView: View {
         .edgesIgnoringSafeArea(.vertical)
             
             if selectedAnnotation != nil && selectedAnnotation?.type == "Specialiste"{
-                NavigationLink(destination:ContactDocView(), isActive: self.$showPracticien) {
+                NavigationLink(destination:ContactDocView(navigationBarIsHidden: self.$navigationBarIsHidden), isActive: self.$showPracticien) {
                                EmptyView()
                            }
             }else{
-                NavigationLink(destination:PharmaView(), isActive: self.$showPracticien) {
+                NavigationLink(destination:PharmaView(navigationBarIsHidden: self.$navigationBarIsHidden), isActive: self.$showPracticien) {
                                               EmptyView()
                                           }
             }
@@ -68,7 +69,7 @@ struct ShowMapView: View {
               }
             }
              .navigationBarTitle("") //this must be empty
-               .navigationBarHidden(true)
+               .navigationBarHidden(self.navigationBarIsHidden)
            
     }
 

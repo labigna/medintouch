@@ -117,8 +117,7 @@ struct SuiviBienEtre: View {
             Image("fond vert").resizable()
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                ScrollView{
-                    
+                
                     HStack{
                         Spacer(minLength: 175)
  
@@ -201,11 +200,13 @@ struct SuiviBienEtre: View {
                                 }
                         }
                     }
-                }
+                
             }
-            
+             .padding(.bottom, 160)
             }
+       
         .navigationBarTitle("")
+        
     }
 }
 

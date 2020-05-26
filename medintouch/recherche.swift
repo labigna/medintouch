@@ -16,7 +16,7 @@ struct recherche: View {
     init() {
         // To remove all separators including the actual ones:
         UITableView.appearance().backgroundColor = .clear
-        //UITableViewCell.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
     }
     
     var body: some View {
@@ -38,7 +38,6 @@ struct recherche: View {
                        Divider()
                 } .padding(.bottom, 25.0)
                 List{
-                    VStack(alignment: .leading) {
                         NavigationLink(destination: ArticlesView()){
                             
                                 rechercheListPic(img: "romarin", titre: "")
@@ -114,7 +113,7 @@ struct recherche: View {
                               .font(.body)
                                                                .fontWeight(.light)
                         }.foregroundColor(.black)
-                    }
+                    
                 }
             }
         }
