@@ -79,9 +79,24 @@ struct ShowMapView: View {
                             Text("Pour accéder à la carte et pouvoir contacter des spécialistes de la médecine douce,\n veuillez vous identifier ou créer un compte")
                                 .multilineTextAlignment(.center)
                                 .padding()
-                            Text("S'identifier")
-                        }.padding()
                             .foregroundColor(.white)
+                            Image("fond vert")
+                                .resizable()
+                                .renderingMode(.original)
+                                    .mask(
+                                RoundedRectangle(cornerRadius: 10))
+                                    .frame(width: 140.0, height: 35.0)
+                                       .overlay( RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(.white))
+                                    .overlay(
+                                        Text("S'identifier")
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.black)
+                                            .opacity(1.0)
+                                            .multilineTextAlignment(.center))
+                                   .shadow(color: Color.black.opacity(0.3), radius: 5, x: 2, y: 5)
+                            
+                        }.padding()
+                            
                     }
                 }
             }

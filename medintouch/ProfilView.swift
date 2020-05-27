@@ -139,15 +139,30 @@ struct ProfilView: View {
                                       VStack{
                                           Text("Pour accéder au profil et pouvoir effectuer un suivi santé,\n veuillez vous identifier ou créer un compte")
                                               .multilineTextAlignment(.center)
+                                            .foregroundColor(.white)
+                                            .fixedSize(horizontal: false, vertical: true) 
                                               .padding()
-                                          Text("S'identifier")
+                                           Image("fond vert")
+                                                                         .resizable()
+                                                                         .renderingMode(.original)
+                                                                             .mask(
+                                                                         RoundedRectangle(cornerRadius: 10))
+                                                                             .frame(width: 140.0, height: 35.0)
+                                                                                .overlay( RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(.white))
+                                                                             .overlay(
+                                                                                 Text("S'identifier")
+                                                                                     .fontWeight(.bold)
+                                                                                     .foregroundColor(.black)
+                                                                                     .opacity(1.0)
+                                                                                     .multilineTextAlignment(.center))
+                                                                            .shadow(color: Color.black.opacity(0.3), radius: 5, x: 2, y: 5)
                                       }.padding()
-                                          .foregroundColor(.white)
+                                          
                                   }
                               }
             }.edgesIgnoringSafeArea(.all)
                 .actionSheet(isPresented: $showingSheet) {
-                    ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion")),  .cancel(Text("Fermer")) ])
+                    ActionSheet(title: Text("Paramètres"), buttons: [.default(Text("Modifier le profil")),  .default(Text("Déconnexion")){self.user.toggle()},  .cancel(Text("Fermer")) ])
             }
             
         }
